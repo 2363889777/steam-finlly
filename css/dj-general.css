@@ -1,0 +1,176 @@
+
+/*通用菜单设置*/
+.dj-general-menu{
+    position: relative;
+    /*位置设置/测试边框*/
+    height: 104px;
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    background: linear-gradient(to bottom, #e3eaef 5%, #c7d5e0 95%);
+    /*文本字体*/
+    /*动画特效*/
+}
+
+/*通用主菜单设置*/
+.dj-main-general{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    width: 940px;
+    height: 100%;
+    /*样式设置*/
+    /*盒子模型的属性*/
+    /*文本字体*/
+    /*动画特效*/
+}
+/*对导航logo进行设置*/
+.dj-main-general {
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    padding-left: 0;
+    /*margin-left: 0;*/
+    /*文本字体*/
+    /*动画特效*/
+}
+/*所有的菜单栏相对定位*/
+.dj-general-menu .navbar-light .navbar-nav .nav-item{
+    position: relative;
+}
+.dj-general-menu .navbar-light .navbar-nav .nav-link:hover{
+    color: red;
+}
+.dj-general-menu .navbar-light .navbar-nav .nav-link{
+    color: black;
+}
+/*对菜单商店进行设置*/
+#dj-general-shop {
+    display: none;
+    width: 73px;
+    float: none;
+    position: absolute;
+    font-size: 11px;
+    background-image: linear-gradient(rgb(227, 234, 239) 5%, rgb(199, 213, 224) 95%);
+    left: 0px;
+    top: 30px;
+}
+#dj-general-shoptitle:hover #dj-general-shop{
+    display: block;
+}
+/*对菜单社区进行设置*/
+#dj-general-community {
+    display: none;
+    width: 73px;
+    float: none;
+    position: absolute;
+    font-size: 11px;
+    background-image: linear-gradient(rgb(227, 234, 239) 5%, rgb(199, 213, 224) 95%);
+    left: 0px;
+    top: 30px;
+}
+#dj-general-communitytitle:hover #dj-general-community{
+    display: block;
+}
+/*对账户进行设置*/
+#dj-general-account {
+    display: none;
+    width: 73px;
+    float: none;
+    position: absolute;
+    font-size: 11px;
+    background-image: linear-gradient(rgb(227, 234, 239) 5%, rgb(199, 213, 224) 95%);
+    left: 0px;
+    top: 30px;
+}
+#dj-general-accounttitle:hover #dj-general-account{
+    display: block;
+}
+/*对右边的菜单栏字体进行设置*/
+#dj-general-seMenubar a{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    padding:1px 10px ;
+    /*文本字体*/
+    font-size: 11px ;
+    /*动画特效*/
+}
+#dj-general-seMenubar{
+    /*位置设置/测试边框*/
+    position: absolute;
+    right: 0;
+    top: 10px;
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    /*文本字体*/
+    /*动画特效*/
+}
+/*对下载进行设置*/
+#dj-general-download{
+    color: white;
+    background: green;
+}
+
+#dj-general-download-black{
+    color: white;
+    background: rgb(97, 106, 114);
+}
+#dj-general-seMenubar .navbar-nav .dropdown-menu{
+    /*位置设置/测试边框*/
+    position: absolute;
+    left: -220px;
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    background:#171a21;
+    /*文本字体*/
+    color: white;
+    /*动画特效*/
+}
+
+#dj-general-seMenubar #dj-general-accountName+.dropdown-menu{
+    /*位置设置/测试边框*/
+    position: absolute;
+    left: -100px;
+    top: 15px;
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    background:#171a21;
+    /*文本字体*/
+    color: white;
+    /*动画特效*/
+}
+#dj-general-seMenubar .navbar-nav .dropdown-menu a{
+     /*位置设置/测试边框*/
+     /*显示和宽高设置*/
+     /*样式设置*/
+     /*盒子模型的属性*/
+     /*文本字体*/
+     color: #b8b6b4;
+     font-size: 13px !important;
+     /*动画特效*/
+ }
+#dj-general-seMenubar .navbar-nav .dropdown-menu .dropdown-item:hover{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    background: none;
+    /*文本字体*/
+    color: white;
+    /*动画特效*/
+}
+#dj-general-language.nav-link{
+    /*位置设置/测试边框*/
+     border-left : 1px solid black;
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    padding:0px 10px ;
+    /*文本字体*/
+    /*动画特效*/
+}

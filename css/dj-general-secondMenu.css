@@ -1,0 +1,327 @@
+/*对内容进行设置*/
+.dj-general-second-menu .dj-general-second-main-menu{
+    /*位置设置/测试边框*/
+    position: relative;
+    /*显示和宽高设置*/
+    width: 940px;
+    height: 66px;
+    /*样式设置*/
+    padding-bottom: 0;
+    padding: 0;
+    /*盒子模型的属性*/
+    background: rgba(244,244,244,0.2);
+    /*文本字体*/
+    /*动画特效*/
+}
+
+/*导航条位置调整*/
+.dj-general-second-menu .dj-general-second-main-menu .navbar-nav{
+    /*位置设置/测试边框*/
+    position: absolute;
+    bottom: 0;
+    /*显示和宽高设置*/
+    width: 100%;
+    height: 35px;
+    /*样式设置*/rgba(0, 0, 0, 0);
+    /*盒子模型的属性*/
+    background-color: rgba(117, 122, 130, 0.6);
+    /*文本字体*/
+    /*动画特效*/
+}
+/*基础样式设置*/
+.dj-general-second-menu .dj-general-second-main-menu .navbar-nav .nav-item{
+    /*位置设置/测试边框*/
+    position: relative;
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    border-right: 1px solid rgba(16, 21, 25, 0.3);
+    /*文本字体*/
+    /*动画特效*/
+}
+.dj-general-second-menu .dj-general-second-main-menu .navbar-nav .nav-item a{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    /*文本字体*/
+    font-size: 13px;
+    text-shadow:rgba(0, 0, 0, 0.25) -1px -1px 0px;
+    color: rgb(217, 218, 221);
+    /*动画特效*/
+}
+.dj-general-second-menu .dj-general-second-main-menu .navbar-nav>.nav-link{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    width: 100%;
+    /*样式设置*/
+    /*盒子模型的属性*/
+    background-color: rgba(0, 0, 0, 0);
+    /*文本字体*/
+    color: rgb(217, 218, 221);
+    font-size: 13px;
+    /*动画特效*/
+}
+#dj-gsmm-shop  .nav-item,
+#dj-gsmm-game  .nav-item{
+
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    display: block;
+    width: 100%;
+    /*样式设置*/
+    /*盒子模型的属性*/
+    padding: 0 6px;
+    /*文本字体*/
+    color: black;
+    /*动画特效*/
+}
+#dj-gsmm-shop  .nav-item a,
+#dj-gsmm-game  .nav-item a{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    padding-top: 3px;
+    padding-bottom: 3px;
+    /*文本字体*/
+    color: black;
+    /*动画特效*/
+}
+/*悬浮改背景*/
+.dj-general-second-menu .dj-general-second-main-menu .navbar-nav .nav-link:hover{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    background: linear-gradient(rgb(227,234,239)5%,rgb(227,234,239)95%);
+    /*文本字体*/
+    color: rgb(0,0,0);
+    /*动画特效*/
+}
+/*设置下拉条*/
+.dj-general-second-menu .dj-general-second-main-menu .navbar-nav .nav{
+    position: absolute;
+    top: 34px;
+    width: 110px;
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    /*padding: 8px 8px;*/
+    background: linear-gradient(rgb(227,234,239)5%,rgb(227,234,239)95%);
+    /*文本字体*/
+    font-size: 13px;
+    /*动画特效*/
+}
+#dj-gsmm-shop  .nav-item:hover a,
+#dj-gsmm-game  .nav-item:hover a{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    background: black;
+    /*文本字体*/
+    color: white;
+    /*动画特效*/
+}
+.dj-general-second-main-menu .dj-menu-hr{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    width: 90%;
+    height: 1px;
+    /*样式设置*/
+    /*盒子模型的属性*/
+    margin-left: 6px;
+    border: 1px solid white;
+    /*文本字体*/
+    /*动画特效*/
+}
+
+#dj-gsmm-software .dropdown-menu.hidden,
+#dj-gsmm-hardware .dropdown-menu.hidden{
+    display: none;
+}
+
+#dj-gsmm-software .dropdown-menu.show ,
+#dj-gsmm-hardware .dropdown-menu.show{
+    display: block;
+}
+
+.dj-general-second-main-menu .dropdown-menu{
+    /*位置设置/测试边框*/
+    position: absolute;
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    padding: 0 3px;
+    background: linear-gradient(rgb(227, 234, 239) 5%, rgb(199, 213, 224) 95%);
+    /*文本字体*/
+
+    /*动画特效*/
+}
+.dj-general-second-main-menu .dropdown-menu .dropdown-item{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    /*文本字体*/
+    font-size: 13px;
+    color: black !important;
+    /*动画特效*/
+}
+.dj-general-second-main-menu .dropdown-menu .dropdown-item:hover{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    background: black;
+    color: white !important;
+    /*文本字体*/
+    /*动画特效*/
+}
+.dj-general-second-main-menu .dropdown-menu .dropdown-divider{
+    border-top:1.5px solid white;
+    width: 90%;
+    margin-left: 8px;
+}
+#dj-gsmm-search{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    width: 230px;
+    /*height: 30px;*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    padding-right: 10px ;
+    /*文本字体*/
+    line-height: 35px;
+    /*动画特效*/
+}
+#dj-gsmm-search [type='text']{
+     /*位置设置/测试边框*/
+     /*显示和宽高设置*/
+     width: 229px;
+     height: 30px;
+     /*样式设置*/
+     /*盒子模型的属性*/
+    background: rgba(117, 122, 130, 0.8);
+     /*文本字体*/
+     /*动画特效*/
+ }
+
+#dj-gsmm-search [type='submit']{
+    /*位置设置/测试边框*/
+    position: absolute;
+    right: 2px;
+    /*显示和宽高设置*/
+    width: 25px;
+    height: 25px;
+    /*样式设置*/
+    /*盒子模型的属性*/
+    padding: 0;
+    background: rgb(155, 155, 157);
+    /*文本字体*/
+    text-align: center;
+    vertical-align: middle;
+    font-size: 13px;
+    /*动画特效*/
+}
+#dj-gsmm-search [type='submit'] i{
+    width: 23px;
+    height: 23px;
+    color: rgb(60, 60, 60);
+}
+
+.dj-general-second-main-menu .dj-gsmm-split{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    width: 300px;
+    /*样式设置*/
+    /*盒子模型的属性*/
+    border: 0 !important;
+    /*文本字体*/
+    /*动画特效*/
+}
+
+/*对登录后的愿望单和购物车进行设置*/
+#dj-gsmm-shop-assist{
+    /*位置设置/测试边框*/
+    position: absolute;
+    right: 0;
+    top: 10px;
+    /*显示和宽高设置*/
+    height: 20px;
+    /*样式设置*/
+    /*盒子模型的属性*/
+    /*文本字体*/
+    font-size: 11px;
+    /*动
+    画特效*/
+}
+
+/*对愿望单按钮进行设置*/
+#dj-gsmm-shop-assist .wishlist{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    width: 100px;
+    height: 20px;
+    /*样式设置*/
+    /*盒子模型的属性*/
+    background-image: url("../dj-img/background_wishlist.jpg");
+    padding: 0;
+    /*文本字体*/
+    font-size: 11px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    /*动画特效*/
+}
+#dj-gsmm-shop-assist .wishlist:hover{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    /*文本字体*/
+    color: black;
+    /*动画特效*/
+}
+/*对购物车按钮进行设置*/
+#dj-gsmm-shop-assist .shoppingCat{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    width: 100px;
+    height: 20px;
+    /*样式设置*/
+    /*盒子模型的属性*/
+    background-image: url("../dj-img/background_cart.jpg");
+    padding: 0;
+    /*文本字体*/
+    font-size: 11px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(164, 208, 7);
+    /*动画特效*/
+}
+#dj-gsmm-shop-assist .shoppingCat span{
+    display: block;
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    width: 102%;
+    height: 103%;
+    /*样式设置*/
+    /*盒子模型的属性*/
+    border-radius: 3px;
+    /*文本字体*/
+    /*动画特效*/
+}
+#dj-gsmm-shop-assist .shoppingCat:hover span{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    background: rgba(164,208,7,0.5);
+    /*文本字体*/
+    /*动画特效*/
+}

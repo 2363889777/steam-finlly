@@ -1,0 +1,385 @@
+/****对身体进行设置
+ *******************************************/
+body{
+
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    background:rgb(32, 35, 38);
+    /*文本字体*/
+    /*动画特效*/
+}
+/****对愿望单身体进行设置
+ *******************************************/
+.dj-wishList{
+    border: 1px solid springgreen;
+    /*位置设置/测试边框*/
+
+    /*显示和宽高设置*/
+    height: 1000px!important;
+    /*样式设置*/
+    /*盒子模型的属性*/
+    background: red;
+    /*文本字体*/
+    /*动画特效*/
+}
+/******************对身体的头部进行设置
+ *******************************************/
+#dj-wishList #dj-wishList-header{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    width: 940px;
+    /*样式设置*/
+    /*盒子模型的属性*/
+    /*文本字体*/
+    /*动画特效*/
+}
+
+#dj-wishList #dj-wishList-header i{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    width: 67px;
+    height: 67px;
+    /*样式设置*/
+    /*盒子模型的属性*/
+    border: 1px solid rgb(63, 63, 63);
+    background: rgb(34, 34, 34);
+    /*文本字体*/
+    color: white;
+    text-align: center;
+    line-height: 67px;
+    /*动画特效*/
+}
+
+#dj-wishList #dj-wishList-header span{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    margin-left: 15px;
+    /*文本字体*/
+    font-size: 26px;
+    color: white;
+    /*动画特效*/
+}
+/******************对愿望单身体进行设置
+ *******************************************/
+#dj-wishList #dj-wishList-body{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    width: 940px;
+    /*样式设置*/
+    /*盒子模型的属性*/
+    margin-top: 20px;
+    /*文本字体*/
+    font-size: 13px;
+    /*动画特效*/
+}
+#dj-wishList #dj-wishList-body .navbar{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    padding-left: 0px;
+    /*文本字体*/
+    /*动画特效*/
+}
+#dj-wishList #dj-wishList-body .nav-item:nth-child(1){
+    margin-left: -8px ;
+}
+#dj-wishList #dj-wishList-body .nav-item{
+    margin-right: 30px;
+}
+/*对字体颜色进行设置*/
+#dj-wishList #dj-wishList-body .nav-link span{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    /*文本字体*/
+    color: rgb(144, 153, 161);
+    /*动画特效*/
+}
+#dj-wishList #dj-wishList-body .nav-link{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    /*文本字体*/
+    color: white;
+    /*动画特效*/
+}
+/*悬浮设置*/
+#dj-wishList #dj-wishList-body .navbar .navbar-nav .nav-item:hover{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    background: rgba(255,255,255,0.1);
+    /*文本字体*/
+    /*动画特效*/
+}
+#dj-wishList #dj-wishList-body .navbar .navbar-nav .nav-item:hover span{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    color: white;
+    /*文本字体*/
+    /*动画特效*/
+}
+/****************** 对所以的下拉条进行设置
+ *******************************************/
+#dj-wishList #dj-wishList-body .dropdown-menu{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    width: 100%;
+    /*样式设置*/
+    /*盒子模型的属性*/
+    background: rgb(128, 138, 156);
+    margin-top: -1px;
+    border-top: 0;
+    border-radius: 0;
+    /*文本字体*/
+    color: white;
+    /*动画特效*/
+}
+#dj-wishList #dj-wishList-body .dropdown-menu .dropdown-item{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    /*文本字体*/
+    font-size: 12px;
+    color: white;
+    /*动画特效*/
+}
+#dj-wishList #dj-wishList-body .dropdown-menu .dropdown-item:hover{
+    background: transparent;
+    color: black;
+}
+/******************对筛选调节菜单进行设置
+ *******************************************/
+#dj-wishList #dropdown-screening~.dropdown-menu{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    width: 940px;
+    /*样式设置*/
+    /*盒子模型的属性*/
+    margin-left: -370px;
+    /*文本字体*/
+    color: black;
+    /*动画特效*/
+}
+#dj-wishList #dropdown-screening~.dropdown-menu .row{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    padding: 30px;
+    /*文本字体*/
+    /*动画特效*/
+}
+#dj-wishList #dropdown-screening~.dropdown-menu .row h6{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    /*文本字体*/
+    font-size: 13px;
+    color: rgb(34, 45, 61);
+    /*动画特效*/
+}
+#dj-wishList #dropdown-screening~.dropdown-menu .row .form-check label{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    /*文本字体*/
+    font-size: 13px;
+    color: white;
+    /*动画特效*/
+}
+/******************对设置下拉菜单进行设置
+ *******************************************/
+#dj-wishList #dropdown-setting~.dropdown-menu{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    padding: 15px;
+    /*文本字体*/
+    /*动画特效*/
+}
+#dj-wishList #dropdown-setting~.dropdown-menu h6{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    /*文本字体*/
+    font-size: 13px;
+    color: rgb(34, 45, 61);
+    /*动画特效*/
+}
+#dj-wishList #dropdown-setting~.dropdown-menu label{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    /*文本字体*/
+    font-size: 13px;
+    color: white;
+    /*动画特效*/
+}
+/******************对搜索按钮进行设置
+ *******************************************/
+#dj-wishList-body #dj-wl-search{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    width: 363px;
+    height: 32px;
+    /*样式设置*/
+    /*盒子模型的属性*/
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    /*文本字体*/
+    font-size: 14px;
+    /*动画特效*/
+}
+/******************对愿望单脚进行设置
+ *******************************************/
+#dj-wishList #dj-wishList-footer{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    width: 940px;
+    /*样式设置*/
+    /*盒子模型的属性*/
+
+    /*文本字体*/
+    /*动画特效*/
+}
+#dj-wishList #dj-wishList-footer>.row{
+    padding: 16px;
+    width: 100%;
+    margin: 0;
+    padding-right: 0;
+    background: rgba(64, 81, 99, 0.9);
+}
+#dj-wishList #dj-wishList-footer>.row{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    width: 908px;
+    height: 180px;
+    /*样式设置*/
+    /*盒子模型的属性*/
+    margin: 0;
+    /*background: aquamarine;*/
+    /*文本字体*/
+    /*动画特效*/
+}
+
+/******************愿望单左边进行设置
+ *******************************************/
+#dj-wishList-footer .dj-wl-goods-img{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    width: 292px;
+    height: 136px;
+    /*样式设置*/
+    /*盒子模型的属性*/
+    /*background: red;*/
+    /*文本字体*/
+    /*动画特效*/
+}
+#dj-wishList-footer .dj-wl-goods-img .dj-wl-deault-img{
+    /*位置设置/测试边框*/
+    /*display: none;*/
+    /*显示和宽高设置*/
+    width: 292px;
+    height: 136px;
+    /*样式设置*/
+    /*盒子模型的属性*/
+    background-image: url("../dj-img/dj-wl-header-default.jpg");
+    background-size: 100%;
+    background-position: center;
+    /*文本字体*/
+    /*动画特效*/
+}
+/*对商品信息进行设置*/
+#dj-wishList-footer .dj-wl-goods-information{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    margin-left: -20px;
+    /*文本字体*/
+    /*动画特效*/
+}
+#dj-wishList-footer .dj-wl-goods-information .dj-game-name{
+    /*位置设置/测试边框*/
+    display: block;
+    /*显示和宽高设置*/
+    width: 100%;
+    height: 100%;
+    /*样式设置*/
+    /*盒子模型的属性*/
+    /*文本字体*/
+    font-size: 22px;
+    color: white;
+    text-decoration: none !important;
+    /*动画特效*/
+}
+#dj-wishList-footer .dj-wl-goods-information .dj-wl-goods-lb{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    padding: 0;
+    /*文本字体*/
+    font-size: 11px;
+    color: rgb(178, 184, 189);
+    /*动画特效*/
+}
+#dj-wishList-footer .dj-wl-goods-information  .dj-wl-goods-content{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    padding: 0;
+    /*文本字体*/
+    font-size: 11px;
+    color:  #66C0F4;
+    /*动画特效*/
+}
+/*右侧面板*/
+#dj-wishList-footer .dj-wl-goods-information .dj-goods-right>.row{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    padding: 0;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    /*文本字体*/
+    /*动画特效*/
+}
+#dj-wishList-footer .dj-wl-goods-information .dj-goods-right span{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#dj-wishList-footer .dj-wl-goods-information .dj-goods-right span:hover{
+    background: rgba(255,255,255,0.1);
+    color: white;
+}
+#dj-wishList-footer .dj-wl-goods-information .dj-remove{
+    display: inline-block;
+    color: rgb(178, 184, 189);
+    /*width: 100%;*/
+    /*height: 100%;*/
+}
+#dj-wishList-footer .dj-remove:hover{
+    color: rgb(200, 210, 199);
+    /*color: white ;*/
+}
