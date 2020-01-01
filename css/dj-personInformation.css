@@ -1,0 +1,198 @@
+/****对身体进行设置
+ *******************************************/
+body{
+    background: url("../dj-img/dj-profile_bg.jpg");
+}
+/****对个人信息页面身体进行设置
+ *******************************************/
+/******************对身体的头部进行设置
+ *******************************************/
+#dj-pi-body #dj-pi-body-header{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    width: 976px;
+    height: 224px;
+    /*样式设置*/
+    /*盒子模型的属性*/
+    background: url("../dj-img/dj-profile_header_bg.png");
+    background-position-x:50%;
+    background-position-y:100%;
+    /*文本字体*/
+    /*动画特效*/
+}
+#dj-pi-body-header #dj-pi-body-main-header{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    width: 100%;
+    /*height: 100%;*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    background: url("../dj-img/dj-profile_header_bg_texture.jpg");
+    background-position-x:50%;
+    background-position-y:50%;
+    /*文本字体*/
+    /*动画特效*/
+}
+#dj-pi-body-main-header>.row{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    padding-top: 24px;
+    padding-right: 25px;
+    padding-left: 25px;
+    /*文本字体*/
+    /*动画特效*/
+}
+#dj-pi-body-main-header .dj-pi-left .dj-img{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    width: 164px;
+    height: 164px;
+    /*样式设置*/
+    /*盒子模型的属性*/
+    border: 1px solid rgb(137, 137, 137);
+    background: url("../dj-img/dj-pi-header-img.jpg") no-repeat;
+    background-position: center;
+    border-image-repeat:stretch;
+    background-size: 100%;
+    /*文本字体*/
+
+    /*动画特效*/
+}
+/*对人物等级进行设置*/
+#dj-pi-body-main-header .dj-pi-right .dj-pi-level{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    width: 32px;
+    height: 32px;
+    /*样式设置*/
+    /*盒子模型的属性*/
+    border-color:rgb(155, 155, 155);
+    border-style:solid;
+    border-width:2px;
+    border-radius: 32px;
+    /*文本字体*/
+    text-align: center;
+    line-height: 26px;
+    font-size: 16px;
+    color: white;
+    /*动画特效*/
+}
+#dj-pi-body-main-header .dj-pi-right .dj-pi-level+span{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    margin-left: 10px;
+    /*margin-top: 5px;*/
+    /*文本字体*/
+    line-height: 26px;
+    font-size: 24px;
+    color: white;
+    /*动画特效*/
+}
+
+#dj-pi-body-main-header .dj-pi-right .dj-pi-information{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    width: 266px;
+    height: 70px;
+    /*样式设置*/
+    /*盒子模型的属性*/
+    margin-top: 15px;
+    background: rgb(34, 34, 35);
+    border-radius: 3px;
+    padding: 8px;
+    border-bottom: 1px solid rgb(52, 57, 68);
+    border-right: 1px solid rgb(52, 57, 68);
+    /*文本字体*/
+    /*动画特效*/
+}
+
+#dj-pi-body-main-header .dj-pi-right .dj-pi-information div{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    /*文本字体*/
+    text-align: left;
+    font-size: 13px;
+    color: rgb(137, 137, 137);
+    line-height: 1.3;
+    /*letter-spacing: 0.5em;*/
+    /*动画特效*/
+}
+
+#dj-pi-body-main-header .dj-pi-right .dj-pi-information div a{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    /*文本字体*/
+    color: white;
+    /*动画特效*/
+}
+#dj-pi-body-main-header .dj-pi-right .dj-pi-information div a:hover{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    /*文本字体*/
+    color:rgb(91, 192, 244);
+    text-decoration: none!important;
+    /*动画特效*/
+}
+#dj-pi-body-main-header .dj-pi-right .dj-pi-setting-i{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    width: 120px;
+    height: 30px;
+    /*样式设置*/
+    /*盒子模型的属性*/
+    margin-top: 15px;
+    border-radius: 3px;
+    background-image:linear-gradient(rgb(122, 132, 148) 5%, rgb(40, 47, 61) 95%);
+    background-color:rgba(0, 0, 0, 0);
+    border-bottom-color:rgb(33, 33, 33);
+    border-bottom: 1px solid;
+    padding: 1px;
+    /*文本字体*/
+    /*动画特效*/
+}
+
+#dj-pi-body-main-header .dj-pi-right .dj-pi-setting-i a{
+    /*位置设置/测试边框*/
+    display: block;
+    /*显示和宽高设置*/
+    width: 118px;
+    height: 29px;
+    /*样式设置*/
+    /*盒子模型的属性*/
+    padding-left: 15px;
+    padding-right: 15px;
+    /*文本字体*/
+    font-size: 15px;
+    color: white;
+    white-space:nowrap;
+    background-image:linear-gradient(rgb(51, 66, 90) 5%, rgb(40, 47, 61) 95%);
+    line-height: 30px;
+    /*动画特效*/
+}
+#dj-pi-body-main-header .dj-pi-right .dj-pi-setting-i a:hover{
+    background-image:linear-gradient(rgb(59, 88, 121) 5%, rgb(40, 47, 61) 95%);
+    text-decoration: none;
+}
+/******************对页面的身体进行修改
+ *******************************************/
+#dj-pi-body-body{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    width: 950px;
+    height: 700px;
+    /*样式设置*/
+    /*盒子模型的属性*/
+    background-image: url("../dj-img/dj-profile_content_bg.png");
+    /*文本字体*/
+    /*动画特效*/
+}
