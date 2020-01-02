@@ -1,0 +1,52 @@
+/* 设置标题 */
+.ls-title {
+    color: white;
+    vertical-align: middle;
+    height: 22px;
+    line-height: 22px;
+    padding-left: 16px;
+    margin-bottom: 10px;
+ }
+
+.ls-title div{
+    display: inline-block;
+    width: 1100px;
+
+    border-bottom: 1px solid white;
+    margin-bottom: 5px;
+}
+
+/* 设置游戏分类图片 */
+.ls-browse {
+    width: 1250px;
+    height: 358px;
+    background-color: #1C263A;
+    padding-top: 10px;
+    padding-left: 30px;
+    left: 17%;
+}
+
+.ls-browse .carousel-item a{
+    display: inline-block;
+    width: 270px;
+    height: 263px;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.ls-browse img{
+    width: 270px;
+    height: 263px;
+    /* 过渡 */
+    transition: all 0.2s linear 0s;
+}
+
+/* 设置鼠标选中的图片放大效果 */
+.ls-browse img:hover {
+    transform: scale(1.1);
+}
+
+/* 设置左右两个箭头的位置 */
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+}

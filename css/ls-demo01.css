@@ -1,0 +1,35 @@
+/* 当最小宽度为1200px时，容器最大宽度为1200px */
+@media (min-width: 1200px){
+    .container {
+        max-width: 1200px;
+        padding: 0;
+    }
+}
+
+/*.ls-award.container{*/
+/*    text-align: center;*/
+/*    width: 1200px !important;*/
+
+/*}*/
+
+.ls-award img, .ls-best img {
+    transition: all 0.2s linear 0s;
+}
+/* 缩放 */
+.ls-award img:hover, .ls-best img:hover{
+    transform: scale(1.02);
+}
+
+.ls-best{
+    min-width: 1800px;
+    background: url('../img/bestof_banner_background.jpg') no-repeat;
+    /* 背景放在中心 */
+    background-position: center;
+    background-size: 100%;
+}
+
+.best {
+    line-height: 295px;
+    height: 100%;
+}
+
