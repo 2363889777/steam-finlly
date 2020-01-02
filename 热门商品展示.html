@@ -14,21 +14,22 @@
     <link rel="stylesheet" href="css/dj-general.css">
     <link rel="stylesheet" href="css/dj-general-secondMenu.css">
 </head>
-<body>
+<body style="overflow-x: hidden">
 
 <!--通用头部-->
 <div style="position: relative;z-index: 999">
-    <div class="dj-general-menu container-fluid">
+    <div class="dj-general-menu container-fluid" style="position: relative;z-index: 1">
         <nav class="navbar navbar-expand-lg navbar-light  dj-main-general container">
-            <a class="navbar-brand" href="#">
-                <img src="dj-img/globalheader_logo.png" style="width: 176px; height: 44px"/>
+            <a class="navbar-brand" href="热门商品展示.html">
+                <!--            <img src="dj-img/globalheader_logo.png" height="44" width="176"/>-->
+                <img src="dj-img/globalheader_logo-1.png" style="height:44px; width:176px;" />
             </a>
-            <div class="collapse navbar-collapse dj-general-menubr">
+            <div class="collapse navbar-collapse dj-general-menubr" >
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item" id="dj-general-shoptitle">
-                        <a class="nav-link" href="#">商店<span class="sr-only">(current)</span></a>
-                        <ul class="nav shadow" id="dj-general-shop" style="z-index: 50;">
-                            <li class="nav-item">
+                        <a class="nav-link" href="#" >商店<span class="sr-only">(current)</span></a>
+                        <ul class="nav shadow" id="dj-general-shop">
+                            <li  class="nav-item">
                                 <a class="nav-link" href="#">精选<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
@@ -38,7 +39,7 @@
                                 <a class="nav-link" href="#">鉴赏家<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">愿望单<span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="login.html">愿望单<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">新闻<span class="sr-only">(current)</span></a>
@@ -48,26 +49,23 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item" id="dj-general-communitytitle" style="z-index: 50;">
+                    <li class="nav-item" id="dj-general-communitytitle">
                         <a class="nav-link" href="#">社区</a>
                         <ul class="nav shadow" id="dj-general-community">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">精选<span class="sr-only">(current)</span></a>
+                            <li  class="nav-item">
+                                <a class="nav-link" href="#">主页<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">探索<span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#">讨论<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">鉴赏家<span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#">创意工坊<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">愿望单<span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#">市场<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">新闻<span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">统计<span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="#">实况直播<span class="sr-only">(current)</span></a>
                             </li>
                         </ul>
                     </li>
@@ -80,17 +78,14 @@
                 </ul>
             </div>
             <div class="collapse navbar-collapse " id="dj-general-seMenubar">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a href="" class="nav-link" id="dj-general-download"><i class="fa fa-download"
-                                                                                                 style="margin-right: 10px"></i>安装
-                        steam</a></li>
-                    <li class="nav-item"><a href="" class="nav-link">登录</a></li>
+                <ul class="navbar-nav mr-auto" >
+                    <li class="nav-item"><a href="" class="nav-link" id="dj-general-download"><i class="fa fa-download" style="margin-right: 10px"></i>安装 steam</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-link">登录</a></li>
                     <li class="nav-item">
-                        <a class="nav-link dropdown-toggle" href="#" id="dj-general-language" role="button"
-                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="dj-general-language" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             语言
                         </a>
-                        <div class="dropdown-menu shadow" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu shadow"  aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">繁體中文(繁体中文)</a>
                             <a class="dropdown-item" href="#">日本語(日语)</a>
                             <a class="dropdown-item" href="#">就亏叶(韩语)</a>
@@ -114,6 +109,7 @@
             </div>
         </nav>
     </div>
+
 
     <!--头部导航-->
     <div class="dj-general-second-menu container-fluid">
@@ -217,7 +213,7 @@
     </div>
 </div>
 
-<div class="fullscreen-bg">
+<div class="fullscreen-bg" style="position: absolute;top: 0px;left: 1px">
     <img src="img/home_header_text_schinese.png" style="width: 600px; height: 100px;position: relative;top: 200px;left: 300px">
     <video autoplay muted loop style="width: 100%;z-index: -1;">
         <source src="video/webm_page_bg_english.mp4">
@@ -232,20 +228,22 @@
 
 <div style="position: relative">
 
-    <div class="ls-best container" style="position: relative;left: 800px;top: -300px">
-        <div class="best container">
+    <div class="dj-best container" style="position: relative;left: 800px;top: -280px">
+        <div class="best container " style="background-image: none">
             <a href=""><img src="img/SteamAward_noshadow.png" style="width: 505px;"></a>
         </div>
     </div>
 
 
     <!--  steam大奖  -->
-    <div class="ls-award container" style="width: 1200px">
+    <div class="ls-award container" style="width: 1200px;position: absolute;top: 230px;left: 50%;margin-left: -600px">
         <a href=""><img src="img/awards_banner_schinese.jpg"></a>
     </div>
+    <div style="width:100%;height: 500px;background-image:linear-gradient(rgb(161, 119, 125)5%,rgb(28, 38, 58) 100%);position: absolute;z-index: -1;left: 0;top: 330px">
 
+    </div>
     <div class="container">
-        <div class="row">
+        <div  class="row">
             <div class="col-md-3">
                 <div class="teas">
                     <img class="img" src="img/茶杯头.jpg" style="width: 254px"
@@ -508,7 +506,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div  class="row">
             <div class="col-md-4">
                 <div class="teas">
                     <img src="img/Grim_Dawn.jpg" style=" width:344px;
@@ -969,13 +967,13 @@
     </div>
 
     <!--  2019年度最佳  -->
-    <div class="ls-best container">
+    <div style="margin-top: 150px" class="ls-best container">
         <div class="best container">
             <a href=""><img src="img/banner_top2019_schinese.jpg" width="1200"></a>
         </div>
     </div>
 
-    <div class="container">
+    <div style="margin-top: 150px" class="container">
         <div class="row">
             <div class="col-md-3">
                 <div class="teas">
@@ -1700,7 +1698,7 @@
     </div>
 
     <!--热销商品-->
-    <div class="container">
+    <div style="margin-top: 150px"  class="container">
         <div class="row">
             <div class="col-md-12 home_title_ctn"
                  style="display: flex;
@@ -2810,7 +2808,7 @@
     </div>
 
     <!--探索-->
-    <div class="container explore-z">
+    <div style="margin-top: 150px" class="container explore-z">
         <div class="row ">
             <div class="col-md-12 home_title_ctn"
                  style="display: flex;
@@ -2844,7 +2842,7 @@
     </div>
 
     <!--2.5折-->
-    <div class="container">
+    <div style="margin-top: 150px"  class="container">
         <div class="break row">
             <div class="col-md-6 home_title_ctn"
                  style="display: flex;
@@ -3199,7 +3197,7 @@
     </div>
 
     <!--浏览更多轮播图-->
-    <div id="carouselExampleIndicators" class="ls-browse carousel slide" data-ride="carousel">
+    <div style="margin-top: 150px" id="carouselExampleIndicators" class="ls-browse carousel slide" data-ride="carousel">
 
         <div class="ls-title">
             浏览更多

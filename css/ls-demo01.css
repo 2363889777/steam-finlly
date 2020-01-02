@@ -14,9 +14,25 @@
     transform: scale(1.02);
 }
 
+.ls-award img, .dj-best img {
+    transition: all 0.2s linear 0s;
+}
+/* 缩放 */
+.ls-award img:hover, .dj-best img:hover{
+    transform: scale(1.02);
+}
+
 .ls-best{
     min-width: 1450px;
     background: url('../img/bestof_banner_background.jpg') no-repeat;
+    /* 背景放在中心 */
+    background-position: center;
+    background-size: 100%;
+}
+
+.dj-best{
+    min-width: 1450px;
+    /*background: url('../img/bestof_banner_background.jpg') no-repeat;*/
     /* 背景放在中心 */
     background-position: center;
     background-size: 100%;
