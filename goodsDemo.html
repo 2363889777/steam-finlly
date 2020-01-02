@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情页</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/dj-general.css">
+    <link rel="stylesheet" href="lib/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/dj-general-secondMenu-black.css">
+    <link rel="stylesheet" href="allendeCss/footer.css">
+    <link rel="stylesheet" href="css/dj-general-black.css">
+    <link rel="stylesheet" href="allendeCss/store-all-css.css">
+</head>
+<body>
+<header style="position: relative;z-index: 99">
+    <div class="dj-general-menu container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light  dj-main-general container">
+            <a class="navbar-brand" href="#">
+                <img src="dj-img/globalheader_logo.png" height="44" width="176"/>
+            </a>
+            <div class="collapse navbar-collapse dj-general-menubr">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item" id="dj-general-shoptitle">
+                        <a class="nav-link" href="#">商店<span class="sr-only">(current)</span></a>
+                        <ul class="nav shadow" id="dj-general-shop">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">精选<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">探索<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">鉴赏家<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">愿望单<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">新闻<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">统计<span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" id="dj-general-communitytitle">
+                        <a class="nav-link" href="#">社区</a>
+                        <ul class="nav shadow" id="dj-general-community">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">精选<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">探索<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">鉴赏家<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">愿望单<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">新闻<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">统计<span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" id="dj-general-accounttitle">
+                        <a class="nav-link" href="#">Ghost<span class="sr-only">(current)</span></a>
+                        <ul class="nav shadow" id="dj-general-account">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">动态<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">个人资料<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">好友<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">组<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">内容<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">徽章<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">库存<span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">聊天</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">客服</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse " id="dj-general-seMenubar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a href="" class="nav-link" id="dj-general-download-black"><i
+                            class="fa fa-download"
+                            style="margin-right: 10px"></i>安装
+                        steam</a></li>
+                    <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-mail-bulk"></i></a></li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" id="dj-general-accountName" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Shadow
+                        </a>
+                        <div class="dropdown-menu shadow" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">注销</a>
+                            <a class="dropdown-item" href="#">帐户明细</a>
+                            <a class="dropdown-item" href="#">偏好</a>
+                            <a class="dropdown-item" href="#">更改语言</a>
+                            <a class="dropdown-item" href="#">查看个人资料</a>
+                        </div>
+                    </li>
+                    <li class="nav-item" style="width: 36px ;height: 36px;background: linear-gradient(rgb(106, 106, 106) 5%, rgb(85, 85, 85) 95%);padding: 1px;">
+
+                        <i class="fa fa-question rounded" style="width: 34px;height: 34px;background:#171a21;text-align: center;vertical-align: middle;line-height: 34px;color: rgb(215, 215, 215)" >
+                            <a href="" style="display: block;width: 100%;height: 100%;position: absolute;left: 0;top: 0;"></a>
+                        </i>
+
+                    </li>
+                </ul>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <script src="lib/jQuery/jQuery.js"></script>
+    <script src="lib/bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+    <script src="lib/bootstrap-4.3.1-dist/js/bootstrap.bundle.js"></script>
+</header>
+<tbody>
+<div class="dj-general-second-menu container-fluid" style="background-color: #1b2838">
+    <nav class=" dj-general-second-main-menu container navbar navbar-expand-lg navbar-light">
+        <div class="navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav rounded shadow-sm">
+                <li class="nav-item active" id="dj-gsmm-shop">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        您的商店
+                    </a>
+                    <div class="dropdown-menu shadow hidden">
+                        <a class="dropdown-item" href="#">商店主页</a>
+                        <a class="dropdown-item" href="#">最近查看过的</a>
+                        <a class="dropdown-item" href="#">Steam鉴赏家</a>
+                        <a class="dropdown-item" href="#">最近更新</a>
+                    </div>
+                </li>
+                <li class="nav-item" id="dj-gsmm-game">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        游戏
+                    </a>
+                    <div class="dropdown-menu shadow hidden">
+                        <a class="dropdown-item" href="#">免费游玩</a>
+                        <a class="dropdown-item" href="#">抢先体验</a>
+                        <a class="dropdown-item" href="#">试玩</a>
+                        <a class="dropdown-item" href="#">虚拟现实</a>
+                        <a class="dropdown-item" href="#">支持Steam控制器</a>
+                        <a class="dropdown-item" href="#">Steam上的网吧游戏</a>
+                        <a class="dropdown-item" href="#">远程畅玩</a>
+                        <div class="dropdown-divider"></div>
+                        <h6 class="dropdown-header">按类型浏览:</h6>
+                        <a class="dropdown-item" href="#">休闲</a>
+                        <a class="dropdown-item" href="#">体育</a>
+                        <a class="dropdown-item" href="#">冒险</a>
+                        <a class="dropdown-item" href="#">动作</a>
+                        <a class="dropdown-item" href="#">大型多人在线</a>
+                        <a class="dropdown-item" href="#">模拟</a>
+                        <a class="dropdown-item" href="#">独立</a>
+                        <a class="dropdown-item" href="#">竞速</a>
+                        <a class="dropdown-item" href="#">策略</a>
+                        <a class="dropdown-item" href="#">角色扮演</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">查看热门标签</a>
+                        <div class="dropdown-divider"></div>
+                        <h6 class="dropdown-header">按平台浏览:</h6>
+                        <a class="dropdown-item" href="#">Mac OS X</a>
+                        <a class="dropdown-item" href="#">SteamOS + Linux</a>
+                    </div>
+                </li>
+                <li class="nav-item collapse navbar-collapse" id="dj-gsmm-software">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" role="button" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        软件
+                    </a>
+                    <div class="dropdown-menu shadow hidden">
+                        <a class="dropdown-item" href="#">软件中心</a>
+                        <div href="" class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">动画制作和建模</a>
+                        <a class="dropdown-item" href="#">实用工具</a>
+                        <a class="dropdown-item" href="#">教育</a>
+                        <a class="dropdown-item" href="#">游戏开发</a>
+                        <a class="dropdown-item" href="#">照片编辑</a>
+                        <a class="dropdown-item" href="#">网络出版</a>
+                        <a class="dropdown-item" href="#">视频制作</a>
+                        <a class="dropdown-item" href="#">设计与插画</a>
+                        <a class="dropdown-item" href="#">音频制作</a>
+                    </div>
+                </li>
+                <li class="nav-item collapse navbar-collapse" id="dj-gsmm-hardware">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        硬件
+                    </a>
+                    <div class="dropdown-menu shadow hidden">
+                        <a class="dropdown-item" href="#">Valve Index@</a>
+                        <a class="dropdown-item" href="#">Steam控制器</a>
+                        <a class="dropdown-item" href="#">Steam流式盒</a>
+                        <a class="dropdown-item" href="#">HTC Vive</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">新闻</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Steam 实验室</a>
+                </li>
+                <li class="nav-item dj-gsmm-split"></li>
+                <li id="dj-gsmm-search">
+                    <form action="" class="form-check-inline">
+                        <input type="text" class="form-control" placeholder="搜索商店">
+                        <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                    </form>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</div>
+<div class="container-fluid store-body">
+    <script src="lib/jQuery/jQuery.js"></script>
+    <script src="lib/bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+    <script src="lib/bootstrap-4.3.1-dist/js/bootstrap.bundle.js"></script>
+    <script src="js/dj-general.js"></script>
+
+    <div class="store-bg">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-5 store-pubgV">
+                <div class="store-lbt">
+                    <div class="pubgV-v">
+                        <img src="img/pubg02_600x338.jpg" alt="pubg"/>
+                    </div>
+                    <div class="pubgV-vs">
+                        <img src="img/pubg02_116x65.jpg">
+                        <img src="img/pugb03_116x65.jpg">
+                        <img src="img/pubg01_116x65.jpg">
+                        <img src="img/pugb03_116x65.jpg">
+                        <img src="img/pubg02_116x65.jpg">
+                    </div>
+                    <div class="pubgV-vr">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 store-pubgI">
+                <div class="pubg-im">
+                    <img src="img/header324x151.jpg" alt="game-header">
+                </div>
+                <div class="pubg-info">
+                    <div>绝地求生(PLAYERUNKNOWN’S BATTLEGROUNDS)是战术竞技类型的游戏，
+                        每一局游戏将有100名玩家参与，他们将被投放在绝地岛(battlegrounds)的上空，游戏开始跳伞时所有人都一无所有。</div>
+                    <div><span>最近测评:</span>
+                        <a class="pubg-bb" href="#">褒贬不一</a>
+                        <span>(61666)</span></div>
+                    <div><span>全部测评:</span>
+                        <a class="pubg-bb" href="#">褒贬不一</a>
+                        <span>(6186686)</span></div>
+                    <div><span>发布日期:</span>
+                        <span class="pubg-span">2017年12月21日</span>
+                    </div>
+                    <div><span>开 发 商 :</span>
+                        <a class="pubg-kfs" href="#">PUBG Corporation</a>
+                    </div>
+                    <div><span>发 行 商 :</span>
+                        <a class="pubg-kfs" href="#">PUBG Corporation</a>
+                    </div>
+                    <div class="pubg-pag">
+                        <span>该产品的热门用户自定义标签：</span><br>
+                        <div class="pubg-paga">
+                            <a href="#">生存</a>
+                            <a href="#">射击</a>
+                            <a href="#">多人</a>
+                            <a class="pubg-paga3" href="#">大逃杀</a>
+                            <a class="pubg-paga2" href="#">玩家对战</a>
+                            <a class="pubg-paga1" href="#">+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <div class="store-addInfo">
+                <div class="addInfo-1">
+                    <span class="addInfo-dm">添加到你的愿望单</span>
+                    <span class="addInfo-gz">关注</span>
+                    <span class="addInfo-ig">忽略</span>
+                    <span class="addInfo-img"><img src="img/btn_arrow_down_padded.png" alt="btn" ></span>
+                    <span class="addInfo-dl">查看你的队列 =></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-6 store-shopp">
+            <div class="div1">
+                <h3>购买 PLAYERUNKNOWN'S BATTLEGROUNDS</h3>
+                <img src="img/icon_platform_win.png" alt="win10"/>
+            </div>
+            <div class="div2">
+                <a>特价促销! 截止1月5日.</a>
+            </div>
+            <div class="div3">
+                <div class="div3-1">-50%</div>
+                <div class="div3-2">
+                    <span class="div3-21">￥98</span>
+                    <span class="div3-22">￥49</span></div>
+                <div class="div3-3"><a href="#">添加至购物车</a></div>
+            </div>
+        </div>
+        <div class="col-2 ">
+            <div class="store-interesting">
+                <div><h4>你对这款游戏感兴趣吗?</h4></div>
+                <img src="img/game_reasons_for.png">
+                <span>是热销商品</span>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-6 store-spb">
+            <div class="div4">
+                <h3>购买 Survivor Pass: Badlands</h3>
+                <img src="img/icon_platform_win.png" alt="win10"/>
+            </div>
+            <div class="div4-2">
+                <div class="div4-22">￥49</div>
+                <div class="div4-23"><a href="#">添加至购物车</a></div>
+            </div>
+            <div class="div5">
+                <div><span>产品不符合退款要求。</span><a href="#">了解更多</a></div>
+            </div>
+
+        </div>
+        <div class="col-2">
+            <div class="store-playR">
+                <p><img src="img/game_reasons_for.png"/> <span>线上玩家对战</span> </p>
+                <p><img src="img/game_reasons_for.png"/> <span>统计</span> </p>
+                <div><span>需要同意用户许可协议</span><br>
+                <a href="#">PLAYERUNKNOWN'S BATTLEGROUNDS EULA</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-6 store-spbs">
+            <div class="spbs-1">
+                <div class="spbs-11">此游戏的内容</div>
+                <div class="spbs-12">浏览所有</div>
+            </div>
+            <div class="spbs-2">
+                <div class="spbs-21">Survivor Pass: Badlands</div>
+                <div class="spbs-22">￥66</div>
+            </div>
+            <div class="spbs-3">
+                <div class="spbs3-22">￥66</div>
+                <div class="spbs3-23">
+                    <a href="#">将所有DLC添加至购物车</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3"></div>
+        <div class="col-2"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-6 store-line">
+            <div class="store-line1">
+                <div class="line-1">近期活动与通知</div>
+                <div class="line-2">查看全部</div>
+            </div>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-3 store-img" >
+            <div>
+                <img src="img/pubg011.png">
+            </div>
+            <span class="p">PLAYERUNKNOWN’S BATTLEGROUNDS</span><br>
+            <span>2019年12月20日周五</span>
+        </div>
+        <div class="col-3 store-img">
+            <div>
+                <img src="img/pubg012.png">
+            </div>
+            <span class="p">PLAYERUNKNOWN’S BATTLEGROUNDS</span><br>
+            <span>2019年12月20日周五</span>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-6 store-line">
+            <div class="store-line1">
+                <div class="line-1">关于这款游戏</div>
+<!--                <div class="line-2">查看全部</div>-->
+            </div>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-6">
+            <div class="store-about">
+            <p>绝地求生(PLAYERUNKNOWN’S BATTLEGROUNDS)是战术竞技类游戏，每一局游戏将有100名玩家参与，他们将被投放在绝地岛(battlegrounds)的上空，游戏开始跳伞时所有人都一无所有。
+                游戏展开的方式是：玩家赤手空拳地分布在岛屿的各个角落，利用岛上多样的武器与道具。
+                随着时间的流逝，岛上的安全地带越来越少，特定地区也会发生爆炸的情况，最终只有一人存活获得胜利。
+                游戏的每一局比赛都会随机转换安全区，这样玩家的很新鲜与紧张感会更加强烈。</p>
+            <p>PLAYERUNKNOWN (Brendan Greene – 目前为PUBG Creative Director )是绝地求生类游戏的开拓者。
+                他在ARMA2初次展现类似游戏模式，他的游戏模式也成为了ARMA系列与H1Z1:King
+                of the Kill的基础。现在， 他为了打造真正的求生战场而在PUBG Corp.开发绝地求生(PLAYERUNKNOWN’S BATTLEGROUNDS)。</p>
+            </div>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-6 store-line">
+            <div class="store-line1">
+                <div class="line-1">系统需求</div>
+                <!--                <div class="line-2">查看全部</div>-->
+            </div>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-3">
+            <div class="store-system">
+                <span class="store-sys">最低配置:</span><br>
+                <span>操作系统:</span>
+                <span class="system-write">64-bit Windows 7, Windows 8.1, Windows 10</span><br>
+                <span>处理器:</span>
+                <span class="system-write">Intel Core i5-4430 / AMD FX-6300</span><br>
+                <span>内存:</span>
+                <span class="system-write"> 8 GB RAM</span><br>
+                <span>显卡:</span>
+                <span class="system-write">NVIDIA GeForce GTX 960 2GB / AMD Radeon R7 370 2GB</span><br>
+                <span>DirectX 版本:</span>
+                <span class="system-write">11</span><br>
+                <span>网络:</span>
+                <span class="system-write">宽带互联网连接</span><br>
+                <span>存储空间:</span>
+                <span class="system-write">需要 30 GB 可用空间</span><br><br>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="store-system">
+                <span class="store-sys">推荐配置:</span><br>
+                <span>操作系统:</span>
+                <span class="system-write">64-bit Windows 7, Windows 8.1, Windows 10</span><br>
+                <span>处理器:</span>
+                <span class="system-write">Intel Core i5-4430 / AMD FX-6300</span><br>
+                <span>内存:</span>
+                <span class="system-write"> 8 GB RAM</span><br>
+                <span>显卡:</span>
+                <span class="system-write">NVIDIA GeForce GTX 960 2GB / AMD Radeon R7 370 2GB</span><br>
+                <span>DirectX 版本:</span>
+                <span class="system-write">11</span><br>
+                <span>网络:</span>
+                <span class="system-write">宽带互联网连接</span><br>
+                <span>存储空间:</span>
+                <span class="system-write">需要 30 GB 可用空间</span><br><br>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-6">
+            <div class="store-copy">
+                <span>© 2019 PUBG CORPORATION ALL RIGHTS RESERVED</span><br>
+                <span>PLAYERUNKNOWN'S BATTLEGROUNDS and PUBG are registered trademarks, trademarks or service marks of PUBG</span>
+            </div>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-2"></div>
+    </div>
+</div>
+</tbody>
+<footer class="index-footer">
+    <div class="footer-info">
+        <div>
+            <div class="footer-null"></div>
+            <div class="footer-about">
+                <ul class="footer-list">
+                    <li>
+                        <a href="#">关于steam</a>
+                        <ul>
+                            <li><a href="#">什么是steam</a></li>
+                            <li><a href="#">在steam上送礼</a></li>
+                            <li><a href="#">steam社区</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">关于VALVE</a>
+                        <ul>
+                            <li><a href="#">关于Valve</a></li>
+                            <li><a href="#">商业解决方案</a></li>
+                            <li><a href="#">Steamworks</a></li>
+                            <li><a href="#">工作</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">帮助</a>
+                        <ul>
+                            <li><a href="#">客服</a></li>
+                            <li><a href="#">论坛</a></li>
+                            <li><a href="#">统计</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">动态信息</a>
+                        <ul>
+                            <li><a href="#"><img src="img/ico_rss2.gif"></img>Steam新闻</a></li>
+                            <li><a href="#"><img src="img/ico_rss2.gif"></img> 游戏发布 </a></li>
+                            <li><a href="#"><img src="img/ico_rss2.gif"></img> 每日特惠 </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-valve">
+                <div class="valve-rule"></div>
+                <div class="valve-valve">
+                    <img src="img/logo_valve_footer.png" alt="valve">
+                </div>
+                <div class="valve-c">
+                    ©2019 Valve Corporation。保留所有权利。所有商标均为其在美国及其它国家/地区的各自持有者所有。
+                </div>
+                <div class="valve-all">
+                    所有的价格均已包含增值税（如适用）。
+                    &nbsp;&nbsp;<a href="#">隐私政策</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">法律信息</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Steam 订户协议</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">退款</a>
+                </div>
+                <div class="valve-steam">
+                    <img src="img/logo_steam_footer.png" alt="steam_logo">
+                </div>
+            </div>
+            <div class="footer-aboutV">
+                <div class="valve-rule"></div>
+                <a href="#">关于 Valve</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Steamworks</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">工作</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Steam 分销</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">礼物卡</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#"><img src="img/ico_facebook.gif" alt="facebook">Steam</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#"><img src="img/ico_twitter.gif" alt="twitter">Steam</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--        <div class="row">-->
+<!--&lt;!&ndash;            内部导航栏&ndash;&gt;-->
+<!--            <div class="col-2">2</div>-->
+<!--            <div class="col-8">8</div>-->
+<!--            <div class="col-2">2</div>-->
+<!--        </div>-->
+<!--        <div class="row">-->
+<!--            &lt;!&ndash;           游戏标题栏&ndash;&gt;-->
+<!--            <div class="col-2">2</div>-->
+<!--            <div class="col-8">8</div>-->
+<!--            <div class="col-2">2</div>-->
+<!--        </div>-->
+<!--        <div class="row">-->
+<!--            &lt;!&ndash;            年度畅销游戏&ndash;&gt;-->
+<!--            <div class="col-2">2</div>-->
+<!--            <div class="col-8">8</div>-->
+<!--            <div class="col-2">2</div>-->
+<!--        </div>-->
+</body>
+</html>

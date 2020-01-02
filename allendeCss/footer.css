@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.index-footer{
+    width: 100%;
+    height:235px;
+    background-color: #121a24;
+    /*border:1px solid red;*/
+}
+.footer-info{
+    width: 940px;
+    height: 235px;
+    position: relative;
+    left: 50%;
+    margin-left: -470px;
+    /*border:1px solid green;*/
+}
+.footer-null{
+    width: 100%;
+    height: 35px;
+    border-bottom: 2px solid #29363d;
+}
+.footer-about{
+    width: 100%;
+    height: 35px;
+    border-bottom: 2px solid #29363d;
+}
+.footer-list{
+    margin-top: 15px;
+    list-style: none;
+    height: 40px;
+}
+.footer-list>li{
+    float: left;
+    padding-right: 10px;
+    background-color: #233c4f;
+    /*color: #67c1f5;*/
+    font-size: 13px;
+}
+.footer-list li a{
+    color: #67c1f5;
+    text-decoration: none;
+}
+.footer-list li ul{
+    display: none;
+    list-style: none;
+    position: absolute;
+    padding: 0px 10px;
+    height: 35px;
+}
+.footer-list li ul li{
+    display: block;
+    padding: 5px 10px;
+    height: 30px;
+    text-align: center;
+    background-color: #dfe7ed;
+}
+.footer-list li ul li a{
+    display: block;
+    height: 30px;
+    width: 100%;
+    color: #233c4f;
+}
+.footer-list>li>a:hover{
+    color: #fff;
+    background-color: #63b9eb;
+}
+/*.footer-list>li>a:hover{*/
+/*    color: #fff;*/
+/*}*/
+.footer-list li:hover ul{
+    display: block;
+    z-index: 1;
+}
+.footer-list li ul li:hover{
+    color: #fff;
+    background-color: #212d3d;
+}
+
+.footer-list li ul li a:hover{
+    color: #fff;
+}
+
+.footer-valve{
+    height: 58px;
+    border-bottom: 2px solid #29363d;
+}
+.valve-rule{
+    height: 8px;
+}
+.valve-valve{
+    width: 80px;
+}
+.valve-c{
+    position: relative;
+    top: -32px;
+    font-size: 12px;
+    color: #8f98a0;
+    margin-left: 100px;
+}
+.valve-all{
+    position: relative;
+    top: -32px;
+    font-size: 12px;
+    color: #8f98a0;
+    margin-left: 100px;
+}
+.valve-steam{
+    width: 96px;
+    height: 26px;
+    position: relative;
+    float: right;
+    top: -58px;
+}
+.valve-all a{
+    text-decoration: none;
+    color: #c6d4df;
+}
+.valve-all a:hover{
+    color: #fff;
+}
+
+.footer-aboutV{
+    height: 60px;
+    font-size: 14px;
+    color: #8f98a0;
+}
+.footer-aboutV a{
+    text-decoration: none;
+    color: #c6d4df;
+}
+.footer-aboutV a:hover{
+    color: #ffffff;
+}

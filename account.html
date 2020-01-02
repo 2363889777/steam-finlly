@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>allende 的账户</title>
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="lib/bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/dj-general-black.css">
+    <link rel="stylesheet" href="allendeCss/footer.css">
+    <link rel="stylesheet" href="allendeCss/account-info-css.css">
+</head>
+<body>
+<header style="position: relative;z-index: 99">
+    <div class="dj-general-menu container-fluid" style="position: relative;z-index: 1">
+        <nav class="navbar navbar-expand-lg navbar-light  dj-main-general container">
+            <a class="navbar-brand" href="热门商品展示-login.html">
+                            <img src="dj-img/globalheader_logo.png" height="44" width="176"/>
+<!--                <img src="dj-img/globalheader_logo-1.png" height="44" width="176"/>-->
+            </a>
+            <div class="collapse navbar-collapse dj-general-menubr">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item" id="dj-general-shoptitle">
+                        <a class="nav-link" href="热门商品展示-login.html">商店<span class="sr-only">(current)</span></a>
+                        <ul class="nav shadow" id="dj-general-shop">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">精选<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">探索<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">鉴赏家<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Wish-list.html">愿望单<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">新闻<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">统计<span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" id="dj-general-communitytitle">
+                        <a class="nav-link" href="#">社区</a>
+                        <ul class="nav shadow" id="dj-general-community">
+                            <li  class="nav-item">
+                                <a class="nav-link" href="#">主页<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">讨论<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">创意工坊<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">市场<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">实况直播<span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" id="dj-general-accounttitle">
+                        <a class="nav-link" href="#">Ghost<span class="sr-only">(current)</span></a>
+                        <ul class="nav shadow" id="dj-general-account">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">动态<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="dj-personInformation.html">个人资料<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">好友<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">组<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">内容<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">徽章<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">库存<span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">聊天</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">客服</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse " id="dj-general-seMenubar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a href="" class="nav-link" id="dj-general-download-black"><i
+                            class="fa fa-download"
+                            style="margin-right: 10px"></i>安装
+                        steam</a></li>
+                    <li class="nav-item"><a href="" class="nav-link"><i class="fa fa-mail-bulk"></i></a></li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" id="dj-general-accountName" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Shadow
+                        </a>
+                        <div class="dropdown-menu shadow" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">注销</a>
+                            <a class="dropdown-item" href="account.html">帐户明细</a>
+                            <a class="dropdown-item" href="#">偏好</a>
+                            <a class="dropdown-item" href="#">更改语言</a>
+                            <a class="dropdown-item" href="dj-personInformation.html">查看个人资料</a>
+                        </div>
+                    </li>
+                    <li class="nav-item" style="width: 36px ;height: 36px;background: linear-gradient(rgb(106, 106, 106) 5%, rgb(85, 85, 85) 95%);padding: 1px;">
+
+                        <i class="fa fa-question rounded" style="width: 34px;height: 34px;background:#171a21;text-align: center;vertical-align: middle;line-height: 34px;color: rgb(215, 215, 215)" >
+                            <a href="" style="display: block;width: 100%;height: 100%;position: absolute;left: 0;top: 0;"></a>
+                        </i>
+
+                    </li>
+                </ul>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <script src="lib/jQuery/jQuery.js"></script>
+    <script src="lib/bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+    <script src="lib/bootstrap-4.3.1-dist/js/bootstrap.bundle.js"></script>
+</header>
+<tbody>
+<div class="container-fluid body">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8 account-title"><br>
+            <a href="index.html">主页</a><span> > 账户</span>
+            <h2>ALLENDE 的账户</h2>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-2 account-info">
+            <div class="info-sp"><a href="#">账户明细</a></div>
+            <div><a href="account-love.html">偏好</a></div>
+            <div><a href="#">语言偏好</a></div>
+        </div>
+        <div class="col-6 account-history">
+            <div class="history-title">
+                <img src="img/icon_cart.png" alt="cart">
+                <span class="account-blue">商店和消费历史记录</span>
+            </div>
+            <diV class="history-invest">
+                <div class="h-invest-wallet">
+                    <div class="line-height"></div>
+                    <a href="#">&nbsp;&nbsp;+ 为您的 Steam 钱包充值</a><br>
+                    <span>&nbsp;&nbsp;钱包余额</span><span class="wallet-coin">￥0</span>
+                    <div class="line-height"></div>
+                </div>
+                <div class="h-invest-pay">
+                    <div class="line-height"></div>
+                    <span>&nbsp;&nbsp;您没有与该帐户相关联的支付方式。</span><br>
+                    <a href="#">&nbsp;&nbsp;为此账户添加一个支付方式</a>
+                </div>
+            </diV>
+            <diV class="history-right">
+                <div class="line-height"></div>
+                <a href="#">查看消费历史记录</a><br>
+                <a href="#">查看许可和产品序列号激活</a><br>
+                <a href="#">更新商店偏好</a><br>
+                <br>
+                <br>
+                <span>国家/地区:</span><span class="hr-span">中国</span><br>
+                <span>如果您搬到了另一个国家/地区，您可以更新 Steam 钱包及查看 Steam 商店的形式。</span><br>
+                <a href="#">更新商店国家/地区</a>
+            </diV>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    <diV class="row">
+        <div class="col-4"></div>
+        <div class="col-6 account-null">
+            <img src="img/icon_cart.png" alt="cart">
+            <span class="account-blue">联系信息</span>
+        </div>
+        <div class="col-2"></div>
+    </diV>
+    <diV class="row">
+        <div class="col-4"></div>
+        <div class="col-3 account-message1">
+            <div class="line-height"></div>
+            <a href="#">管理电子邮件偏好</a><br>
+            <span>电子邮件地址: </span><span class="hr-span">&nbsp;&nbsp;zyhandly@qq.com</span><br>
+            <span>状态: </span><span class="hr-span">&nbsp;&nbsp;已验证</span><br>
+            <a href="#">更改我的电子邮件地址</a><br>
+        </div>
+        <div class="col-3 account-message2">
+            <div class="line-height"></div>
+            <a href="#">添加手机号码</a><br>
+            <span>为了额外的安全性，您可以向您的帐户添加手机号码。以使 Steam 向您的手机发送重要的消息。</span>
+        </div>
+        <div class="col-2"></div>
+    </diV>
+    <diV class="row">
+        <div class="col-4"></div>
+        <div class="col-6 account-null">
+            <img src="img/icon_cart.png" alt="cart">
+            <span class="account-blue">账户安全</span>
+        </div>
+        <div class="col-2"></div>
+    </diV>
+    <diV class="row">
+        <div class="col-4"></div>
+        <div class="col-3 account-safe1">
+            <div class="line-height"></div>
+            <span>状态<img src="img/icon_cart.png"></span>
+            <span class="hr-span">&nbsp;&nbsp;此帐户没有启用 Steam 令牌。</span><br>
+            <a href="#">管理 Steam 令牌</a><br>
+            <a href="#">更改我的密码</a><br>
+            <div class="line-height"></div>
+            <div class="line-height line-bottom"></div>
+            <div class="line-height"></div>
+            <span>Steam 令牌通过在登录时要求输入一串额外代码来帮助保护您的帐户免受非法访问。</span>
+        </div>
+        <div class="col-3 account-safe2">
+            <div class="line-height"></div>
+            <a href="#">更多关于 Steam 令牌的信息</a><br>
+            <a href="#">更多关于 Steam 令牌手机验证器的信息</a><br>
+        </div>
+        <div class="col-2"></div>
+    </diV>
+
+    <diV class="row">
+        <div class="col-4"></div>
+        <div class="col-6 account-null">
+            <img src="img/icon_cart.png" alt="cart">
+            <span class="account-blue">家庭设置</span>
+        </div>
+        <div class="col-2"></div>
+    </diV>
+    <diV class="row">
+        <div class="col-4"></div>
+        <div class="col-3 account-family1">
+            <div class="line-height"></div>
+            <a href="#">管理家庭库共享</a><br>
+            <span>在您不进行游戏时，家庭库共享允许选中的帐户在已授权的计算机上使用您的游戏库。您最多可以同时授权 10 台计算机。</span>
+        </div>
+        <div class="col-3 account-family2">
+            <div class="line-height"></div>
+            <span class="hr-span">家庭监护已禁用</span><br>
+            <a href="#">管理家庭监护</a>
+            <div class="line-height"></div>
+            <div class="line-height line-bottom"></div>
+            <div class="line-height"></div>
+            <span>家庭监护采用受 PIN 码保护的家庭监护来限制对内容和功能的访问。</span>
+        </div>
+        <div class="col-2"></div>
+    </diV>
+    <diV class="row">
+        <div class="col-4"></div>
+        <div class="col-6 account-delete">
+            <div class="line-height"></div>
+            <a href="#">管理家庭库共享-</a>
+            <span>了解更多关于永久删除帐户及其相关资料的信息。</span>
+        </div>
+        <div class="col-2"></div>
+    </diV>
+</div>
+</tbody>
+
+<footer class="index-footer">
+    <div class="footer-info">
+        <div>
+            <div class="footer-null"></div>
+            <div class="footer-about">
+                <ul class="footer-list">
+                    <li>
+                        <a href="#">关于steam</a>
+                        <ul>
+                            <li><a href="#">什么是steam</a></li>
+                            <li><a href="#">在steam上送礼</a></li>
+                            <li><a href="#">steam社区</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">关于VALVE</a>
+                        <ul>
+                            <li><a href="#">关于Valve</a></li>
+                            <li><a href="#">商业解决方案</a></li>
+                            <li><a href="#">Steamworks</a></li>
+                            <li><a href="#">工作</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">帮助</a>
+                        <ul>
+                            <li><a href="#">客服</a></li>
+                            <li><a href="#">论坛</a></li>
+                            <li><a href="#">统计</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">动态信息</a>
+                        <ul>
+                            <li><a href="#"><img src="img/ico_rss2.gif"></img>Steam新闻</a></li>
+                            <li><a href="#"><img src="img/ico_rss2.gif"></img> 游戏发布 </a></li>
+                            <li><a href="#"><img src="img/ico_rss2.gif"></img> 每日特惠 </a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-valve">
+                <div class="valve-rule"></div>
+                <div class="valve-valve">
+                    <img src="img/logo_valve_footer.png" alt="valve">
+                </div>
+                <div class="valve-c">
+                    ©2019 Valve Corporation。保留所有权利。所有商标均为其在美国及其它国家/地区的各自持有者所有。
+                </div>
+                <div class="valve-all">
+                    所有的价格均已包含增值税（如适用）。
+                    &nbsp;&nbsp;<a href="#">隐私政策</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">法律信息</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Steam 订户协议</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">退款</a>
+                </div>
+                <div class="valve-steam">
+                    <img src="img/logo_steam_footer.png" alt="steam_logo">
+                </div>
+            </div>
+            <div class="footer-aboutV">
+                <div class="valve-rule"></div>
+                <a href="#">关于 Valve</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Steamworks</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">工作</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Steam 分销</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">礼物卡</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#"><img src="img/ico_facebook.gif" alt="facebook">Steam</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#"><img src="img/ico_twitter.gif" alt="twitter">Steam</a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

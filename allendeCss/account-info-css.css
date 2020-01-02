@@ -1,0 +1,134 @@
+.body{
+    height: 1300px;
+    background-color: #1b2838;
+}
+.account-title{
+    /*border: 1px solid red;*/
+    height: 120px;
+    background-color: #223e59;
+}
+
+.account-title a,
+.account-title span{
+    text-decoration: none;
+    color: #8f98a0;
+}
+.account-title h2{
+    color: #ffffff;
+    font-weight: lighter;
+}
+.account-info,
+.account-history{
+    height: 320px;
+    /*border: 1px solid green;*/
+    background-color: #1b2838;
+}
+.account-history{
+    background-color: #16202d;
+    padding: 0;
+}
+.history-title{
+    background-color: #0197cf;
+    color: #fff;
+    width: 100%;
+    font-size: 17px;
+    line-height: 31px;
+}
+
+.account-info a{
+    display: block;
+    width: 60%;
+    height: 60px;
+    padding: 15px 20px;
+    color: #fff;
+    font-size: 16px;
+}
+.info-sp{
+    background-color: #374250;
+}
+.account-info div:hover{
+    background-color: #606974;
+}
+.history-invest{
+    /*border: 1px solid red;*/
+    width: 50%;
+    height: 285px;
+    float: left;
+    padding-right: 5px;
+}
+.h-invest-wallet{
+    border-bottom: 1px solid #56707f;
+}
+a{
+    text-decoration: none;
+    color: #5fb9ef;
+    font-size: 13px;
+}
+span{
+    color: #616974;
+    font-size: 13px;
+}
+.hr-span{
+    color: #c0ccd9;
+}
+.wallet-coin{
+    color: #fff;
+    font-size: 30px;
+    font-weight: lighter;
+    margin-left: 65%;
+}
+.line-height{
+    height: 10px;
+}
+a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+.history-right{
+    /*border: 1px solid red;*/
+    width: 50%;
+    height: 285px;
+    float: left;
+}
+
+.account-message1,
+.account-message2{
+    background-color: #16202d;
+    height: 190px;
+}
+
+.account-null{
+    background-color: #0197cf;
+    color: #fff;
+    width: 100%;
+    font-size: 17px;
+    line-height: 31px;
+    margin-top: 20px;
+}
+.account-blue{
+    font-size: 16px;
+    color: #fff;
+}
+
+.account-safe1,
+.account-safe2{
+    background-color: #16202d;
+    height: 215px;
+}
+
+.line-bottom{
+    border-bottom: 1px solid #56707f;
+}
+
+.account-family1,
+.account-family2{
+    background-color: #16202d;
+    height: 165px;
+}
+
+.account-delete{
+    margin-top: 20px;
+    background-color: #16202d;
+    height: 40px;
+}
