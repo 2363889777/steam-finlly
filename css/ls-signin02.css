@@ -1,0 +1,70 @@
+.ls-signin02 {
+    width: 100%;
+    height: 450px;
+    background-color: #1B2838;
+    color: #c6d4df;
+    font-size: 24px;
+}
+
+.ls-signin02 .container {
+    padding-top: 10px;
+    width: 940px;
+    height: 500px;
+    padding-left: 0;
+}
+
+.ls-signin02 .col-8 {
+    background-color: #16202D;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 15px;
+    padding-top: 20px;
+}
+
+.ls-signin02 .form-group input {
+    width: 222px;
+    height: 25px;
+    padding-left: 5px;
+    background-color: rgba( 0, 0, 0, 0.2 );
+    color: white;
+    border-color: #000 #45556c #45556c #000;
+}
+
+.ls-signin02 .form-group a {
+    display: inline;
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.ls-signin02 .form-group a:hover {
+    color: #66C0F4;
+}
+
+.ls-signin02 .wire {
+    width: 584px;
+    border-top: 1px solid #45555c;
+    margin-bottom: 20px;
+}
+
+.ls-signin02 a {
+    text-decoration: none;
+}
+
+.ls-signin02 a span{
+    display: block;
+    margin-left: 420px;
+    margin-bottom: 20px;
+    width: 110px;
+    height: 30px;
+    background: rgba( 103, 193, 245, 0.2 );
+    font-size: 15px;
+    text-align: center;
+    line-height: 30px;
+    color: #67c1f5;
+}
+
+.ls-signin02 a span:hover{
+    background: #61B6E7;
+    color: #FFFFFF;
+}
