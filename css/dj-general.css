@@ -22,6 +22,7 @@
     /*盒子模型的属性*/
     /*文本字体*/
     /*动画特效*/
+    font-size: 14px;
 }
 /*对导航logo进行设置*/
 .dj-main-general {
@@ -50,7 +51,7 @@
     width: 73px;
     float: none;
     position: absolute;
-    font-size: 11px;
+    font-size: 13px;
     background-image: linear-gradient(rgb(227, 234, 239) 5%, rgb(199, 213, 224) 95%);
     left: 0px;
     top: 30px;

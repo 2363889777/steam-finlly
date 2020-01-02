@@ -16,7 +16,7 @@
 
 .ls-best{
     min-width: 1450px;
-    background: url('../img/bestof_banner_background.jpg') no-repeat;
+    /*background: url('../img/bestof_banner_background.jpg') no-repeat;*/
     /* 背景放在中心 */
     background-position: center;
     background-size: 100%;
