@@ -1,0 +1,199 @@
+/* 总的样式 */
+.ls-signin {
+    /*width: 1903px;*/
+    /*height: 866px;*/
+    background-color: #1B2838;
+    color: #c6d4df;
+    font-size: 12px;
+}
+
+/* 主页a标签的设置 */
+.ls-signin .container a {
+    color: #8f98a0;
+}
+
+.ls-signin .container a:hover {
+    color: white;
+}
+
+/* 注册名称的样式 */
+.ls-signin .title {
+    color: #d6d7d8;
+    font-size: 30px;
+}
+
+.ls-signin .container {
+    width: 940px;
+    height: 940px;
+    padding-left: 0;
+    padding-top: 10px;
+}
+
+/* 注册 */
+.ls-signin .row {
+    padding-top: 20px;
+    margin-left: 0px;
+    background-color: #16202D;
+}
+
+/* 输入框 */
+.ls-signin form input {
+    width: 222px;
+    height: 25px;
+    background-color: #121A24;
+}
+
+/* 国家选择 */
+.ls-signin select {
+    width: 223px;
+    height: 25px;
+    background-color: #BABDC0;
+}
+
+.ls-signin option {
+    background-color: white;
+}
+
+/* 为什么加入steam */
+.ls-signin h2 {
+    font-size: 14px;
+    color: white;
+    /*padding-bottom: 15px;*/
+}
+
+.ls-signin ul {
+    padding-left: 15px;
+}
+
+.ls-signin ul>li {
+    height: 25px;
+}
+
+.ls-signin #row2 {
+    padding-top: 10px;
+}
+
+/* 线 */
+.ls-signin .col-8 .wire {
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid #364C59;
+    margin-bottom: 20px;
+}
+
+/* 人机验证 */
+.ls-signin .row .verify {
+
+    width: 300px;
+    height: 74px;
+    background-color: #222222;
+    color: white;
+    border: 1px solid white;
+    padding-left: 10px;
+    margin-left: 0px;
+    padding-top: 5px;
+}
+
+/*.ls-signin .verify.row {*/
+/*    margin-top: 10px;*/
+/*    border-top: 1px solid #364C59;*/
+/*}*/
+
+.ls-signin .verify .square{
+    width: 28px;
+    height: 28px;
+    background-color: white;
+    border: 1px solid blue;
+    margin-top: 15px;
+}
+
+.ls-signin .verify img {
+    width: 32px;
+    height: 32px;
+
+}
+
+
+
+.ls-signin .verify p {
+    margin: 0;
+}
+
+.ls-signin .verify .col-6 {
+    /*margin-top: 5px;*/
+    margin-top: 20px;
+}
+
+.ls-signin .verify .col-4 {
+    padding: 0;
+    padding-left: 45px;
+}
+.ls-signin .verify .right {
+    margin-left: 180px;
+}
+
+.ls-signin .verify .right a {
+    color: white;
+}
+
+/* 协议 */
+.ls-signin .protocol .wire1 {
+    margin-top: 20px;
+    border-top: 1px solid #364C59;
+    padding-top: 20px;
+}
+
+/* 协议内容 */
+.ls-signin .ssa_box {
+    width: 548px;
+    height: 337px;
+    border: 1px solid #364C59;
+    padding: 9px;
+    overflow: auto;
+}
+
+.ls-signin .ssa_box h3 {
+    font-size: 22px;
+    color: white;
+}
+
+.ls-signin #ssa_body ol {
+    padding-left: 0px;
+}
+
+.ls-signin #ssa_body a,
+.ls-signin .policy a,
+.ls-signin .more a {
+    color: white;
+}
+
+.ls-signin #ssa_body a:hover,
+.ls-signin .policy a:hover,
+.ls-signin .more a:hover {
+    color: #66C0F4;
+    text-decoration: none;
+}
+
+.ls-signin .form-check {
+    margin-top: 10px;
+}
+
+.ls-signin .policy {
+    height: 50px;
+}
+
+.ls-signin .policy button {
+    margin-left: 400px;
+    border: 0;
+    padding: 0;
+    width: 60px;
+    height: 30px;
+    background: rgba( 103, 193, 245, 0.2 );
+    font-size: 15px;
+    color: #67c1f5;
+}
+
+.ls-signin .policy button:hover {
+    background: #61B6E7;
+    color: #FFFFFF;
+}
