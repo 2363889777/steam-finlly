@@ -4,472 +4,17 @@
     <meta charset="UTF-8">
     <title>热门商品展示</title>
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="lib/fontawesome/css/all.css">
-    <link rel="stylesheet" href="css/dj-general-black.css">
-    <link rel="stylesheet" href="css/dj-general.css">
-    <link rel="stylesheet" href="css/dj-general-secondMenu-black.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <style>
-        body {
-            background-color: rgb(28, 38, 58);
-            font-size: 12px;
-        }
-
-        img {
-            width: 100%;
-        }
-
-
-
-        .discount_pct {
-            background-color: #A1CD44;
-            width: 37px;
-            height: 22px;
-            line-height: 22px;
-            text-align: center;
-            color: black;
-            font-weight: bold;
-        }
-
-        .discount {
-            margin-left: 144px;
-        }
-
-        .discount > div {
-            float: left;
-            margin-top: 5px;
-        }
-
-        .discount_price, .discount_real {
-            background: rgba(0, 0, 0, 0.6);
-        }
-
-        .discount_price {
-            text-decoration: line-through;
-            color: rgb(131, 141, 147);
-            width: 37px;
-            height: 22px;
-            font-size: 14px;
-            text-indent: 5px;
-        }
-
-        .discount_real {
-            font-size: 14px;
-            color: #ffffff;
-            width: 37px;
-            height: 22px;
-        }
-
-        .quantity_discount {
-            margin-left: 239px;
-        }
-
-        .quantity_discount > div {
-            float: left;
-            margin-top: 5px;
-        }
-
-        .row > div > img {
-            margin-top: 10px;
-        }
-
-        .tea_head {
-            /*width: 100%;*/
-            position: absolute;
-            top: 10px;
-            left: 14px;
-            width: 258px;
-            z-index: 5;
-        }
-
-        .tea_head {
-            position: absolute;
-            top: 10px;
-            left: 14px;
-            width: 258px;
-            z-index: 5;
-        }
-
-        .img {
-            display: block;
-            margin-top: 10px;
-        }
-
-        .popout {
-            width: 350px;
-            height: 320px;
-            background-color: rgb(223, 231, 237);
-            position: absolute;
-            top: 10px;
-            left: 273px;
-            z-index: 15;
-            display: none;
-        }
-
-        .teas:hover > .popout {
-            display: block;
-        }
-
-
-        .evaluating {
-            background-color: rgb(107, 121, 133);
-            border-radius: 3px;
-            color: rgb(171, 185, 196);
-        }
-
-        .evaluating a {
-            color: rgb(102, 192, 244);
-        }
-
-        .tally {
-            margin-top: 10px;
-        }
-
-        .tally p {
-            float: left;
-            margin: 1px;
-        }
-
-        .system > img {
-            margin: 1px;
-            margin-top: -10px;
-        }
-
-        .options {
-            position: absolute;
-            top: 11px;
-            left: 255px;
-            z-index: 11;
-            display: none;
-        }
-
-        .options div img {
-            position: absolute;
-            top: 0px;
-            width: 17px;
-            height: 17px;
-        }
-
-        .options div {
-            width: 15px;
-            height: 15px;
-            background-color: #e5e5e5;
-            border: 0;
-        }
-
-        .teas:hover > .options {
-            display: block;
-        }
-
-        .menu {
-            position: absolute;
-            top: 1px;
-            left: -101px;
-        }
-
-        .toggle {
-            border-radius: 10px;
-        }
-
-        .tea_head1 {
-            position: absolute;
-            top: 0px;
-            left: 14px;
-            width: 351px;
-            z-index: 5;
-            margin-top: 10px;
-        }
-
-        .discount1 {
-            margin-left: 239px;
-        }
-
-        .discount1 > div {
-            float: left;
-            margin-top: 5px;
-        }
-
-        .popout1 {
-            width: 350px;
-            height: 320px;
-            background-color: rgb(223, 231, 237);
-            position: absolute;
-            top: 10px;
-            left: 365px;
-            z-index: 15;
-            display: none;
-        }
-
-        .teas:hover > .popout1 {
-            display: block;
-        }
-
-        .options1 {
-            position: absolute;
-            top: 11px;
-            left: 347px;
-            z-index: 11;
-            display: none;
-        }
-
-        .options1 div img {
-            position: absolute;
-            top: 0px;
-            width: 17px;
-            height: 17px;
-        }
-
-        .options1 div {
-            width: 15px;
-            height: 15px;
-            background-color: #e5e5e5;
-            border: 0;
-        }
-
-        .teas:hover > .options1 {
-            display: block;
-        }
-
-        .popout2 {
-            width: 350px;
-            height: 320px;
-            background-color: rgb(223, 231, 237);
-            position: absolute;
-            top: 10px;
-            left: -337px;
-            z-index: 15;
-            display: none;
-        }
-
-        .teas:hover > .popout2 {
-            display: block;
-        }
-
-        .popout3 {
-            width: 350px;
-            height: 320px;
-            background-color: rgb(223, 231, 237);
-            position: absolute;
-            top: 10px;
-            left: -337px;
-            z-index: 15;
-            display: none;
-        }
-
-        .teas:hover > .popout3 {
-            display: block;
-        }
-
-        .home_title_ctn > div {
-            float: left;
-        }
-
-        .break > div {
-            float: left;
-        }
-    </style>
+    <link rel="stylesheet" href="css/hot.css">
+    <link rel="stylesheet" href="css/ls-demo01.css">
+    <!--    <link rel="stylesheet" href="css/ls-demo02.css">-->
 </head>
 <body>
 
-<div class="dj-general-menu container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-light  dj-main-general container">
-        <a class="navbar-brand" href="#">
-            <img src="dj-img/globalheader_logo.png" height="44" width="176"/>
-        </a>
-        <div class="collapse navbar-collapse dj-general-menubr" >
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item" id="dj-general-shoptitle">
-                    <a class="nav-link" href="#" >商店<span class="sr-only">(current)</span></a>
-                    <ul class="nav shadow" id="dj-general-shop">
-                        <li  class="nav-item">
-                            <a class="nav-link" href="#">精选<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">探索<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">鉴赏家<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">愿望单<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">新闻<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">统计<span class="sr-only">(current)</span></a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item" id="dj-general-communitytitle">
-                    <a class="nav-link" href="#">社区</a>
-                    <ul class="nav shadow" id="dj-general-community">
-                        <li  class="nav-item">
-                            <a class="nav-link" href="#">精选<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">探索<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">鉴赏家<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">愿望单<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">新闻<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">统计<span class="sr-only">(current)</span></a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">关于</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">客服</a>
-                </li>
-            </ul>
-        </div>
-        <div class="collapse navbar-collapse " id="dj-general-seMenubar">
-            <ul class="navbar-nav mr-auto" >
-                <li class="nav-item"><a href="" class="nav-link" id="dj-general-download"><i class="fa fa-download" style="margin-right: 10px"></i>安装 steam</a></li>
-                <li class="nav-item"><a href="" class="nav-link">登录</a></li>
-                <li class="nav-item">
-                    <a class="nav-link dropdown-toggle" href="#" id="dj-general-language" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        语言
-                    </a>
-                    <div class="dropdown-menu shadow"  aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">繁體中文(繁体中文)</a>
-                        <a class="dropdown-item" href="#">日本語(日语)</a>
-                        <a class="dropdown-item" href="#">就亏叶(韩语)</a>
-                        <a class="dropdown-item" href="#">lns(泰语)</a>
-                        <a class="dropdown-item" href="#">6bnrapCkm (保加利亚语)</a>
-                        <a class="dropdown-item" href="#">Cestina (捷克语)</a>
-                        <a class="dropdown-item" href="#">Dansk (丹麦语)</a>
-                        <a class="dropdown-item" href="#">Deutsch (德语)</a>
-                        <a class="dropdown-item" href="#">English (英语)</a>
-                        <a class="dropdown-item" href="#">Espanol- Espana (西班牙语-西班牙)</a>
-                        <a class="dropdown-item" href="#">Espanol - Latinoamerica (西班牙语拉J美洲)</a>
-                        <a class="dropdown-item" href="#">EXηVIka (希腊语)</a>
-                        <a class="dropdown-item" href="#">Francais (法语)</a>
-                        <a class="dropdown-item" href="#">Italiano (意大利语)</a>
-                        <a class="dropdown-item" href="#">Magyar (匈牙利语)</a>
-                        <a class="dropdown-item" href="#">Nederlands (荷兰语)</a>
-                    </div>
-                </li>
-
-            </ul>
-        </div>
-    </nav>
-</div>
-
-
-<div class="dj-general-second-menu container-fluid">
-    <nav class=" dj-general-second-main-menu container navbar navbar-expand-lg navbar-light">
-        <div class="navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav rounded shadow-sm">
-                <li class="nav-item active" id="dj-gsmm-shop">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        您的商店
-                    </a>
-                    <div class="dropdown-menu shadow hidden">
-                        <a class="dropdown-item" href="#">商店主页</a>
-                        <a class="dropdown-item" href="#">最近查看过的</a>
-                        <a class="dropdown-item" href="#">Steam鉴赏家</a>
-                        <a class="dropdown-item" href="#">最近更新</a>
-                    </div>
-                </li>
-                <li class="nav-item" id="dj-gsmm-game">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false">
-                        游戏
-                    </a>
-                    <div class="dropdown-menu shadow hidden">
-                        <a class="dropdown-item" href="#">免费游玩</a>
-                        <a class="dropdown-item" href="#">抢先体验</a>
-                        <a class="dropdown-item" href="#">试玩</a>
-                        <a class="dropdown-item" href="#">虚拟现实</a>
-                        <a class="dropdown-item" href="#">支持Steam控制器</a>
-                        <a class="dropdown-item" href="#">Steam上的网吧游戏</a>
-                        <a class="dropdown-item" href="#">远程畅玩</a>
-                        <div class="dropdown-divider"></div>
-                        <h6 class="dropdown-header">按类型浏览:</h6>
-                        <a class="dropdown-item" href="#">休闲</a>
-                        <a class="dropdown-item" href="#">体育</a>
-                        <a class="dropdown-item" href="#">冒险</a>
-                        <a class="dropdown-item" href="#">动作</a>
-                        <a class="dropdown-item" href="#">大型多人在线</a>
-                        <a class="dropdown-item" href="#">模拟</a>
-                        <a class="dropdown-item" href="#">独立</a>
-                        <a class="dropdown-item" href="#">竞速</a>
-                        <a class="dropdown-item" href="#">策略</a>
-                        <a class="dropdown-item" href="#">角色扮演</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">查看热门标签</a>
-                        <div class="dropdown-divider"></div>
-                        <h6 class="dropdown-header">按平台浏览:</h6>
-                        <a class="dropdown-item" href="#">Mac OS X</a>
-                        <a class="dropdown-item" href="#">SteamOS + Linux</a>
-                    </div>
-                </li>
-                <li class="nav-item collapse navbar-collapse" id="dj-gsmm-software">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" role="button" data-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false">
-                        软件
-                    </a>
-                    <div class="dropdown-menu shadow hidden">
-                        <a class="dropdown-item" href="#">软件中心</a>
-                        <div href="" class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">动画制作和建模</a>
-                        <a class="dropdown-item" href="#">实用工具</a>
-                        <a class="dropdown-item" href="#">教育</a>
-                        <a class="dropdown-item" href="#">游戏开发</a>
-                        <a class="dropdown-item" href="#">照片编辑</a>
-                        <a class="dropdown-item" href="#">网络出版</a>
-                        <a class="dropdown-item" href="#">视频制作</a>
-                        <a class="dropdown-item" href="#">设计与插画</a>
-                        <a class="dropdown-item" href="#">音频制作</a>
-                    </div>
-                </li>
-                <li class="nav-item collapse navbar-collapse" id="dj-gsmm-hardware">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                       aria-haspopup="true" aria-expanded="false">
-                        硬件
-                    </a>
-                    <div class="dropdown-menu shadow hidden">
-                        <a class="dropdown-item" href="#">Valve Index@</a>
-                        <a class="dropdown-item" href="#">Steam控制器</a>
-                        <a class="dropdown-item" href="#">Steam流式盒</a>
-                        <a class="dropdown-item" href="#">HTC Vive</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">新闻</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Steam 实验室</a>
-                </li>
-                <li class="nav-item dj-gsmm-split"></li>
-                <li id="dj-gsmm-search">
-                    <form action="" class="form-check-inline">
-                        <input type="text" class="form-control" placeholder="搜索商店">
-                        <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
-                    </form>
-                </li>
-            </ul>
-
-        </div>
-    </nav>
-</div>
-
 <div class="container">
     <div class="row">
         <div class="col-md-3">
             <div class="teas">
-                <img class="img" src="img/茶杯头.jpg" style="width: 254px"
+                <img class="img" src="img/茶杯头.jpg"
                      οnmοuseοver="document.getElementById('img').style.display = 'none'; "
                      οnmοuseοut="document.getElementById('img').style.display = 'block' ;">
                 <video muted="muted" class="tea_head" onmouseover="this.play()" onmouseout="this.pause()">
@@ -481,7 +26,7 @@
                          data-toggle="dropdown" data-offset="-141,-12">
                         <img src="img/xia.png">
                     </div>
-                    <div class="dropdown-menu menu" style="height: 110px;">
+                    <div class="dropdown-menu menu" style="height: 80px;">
                         <button class="dropdown-item">添加至您的愿望单</button>
                         <button class="dropdown-item">忽略</button>
                         <button class="dropdown-item">偏好</button>
@@ -535,7 +80,7 @@
 
         <div class="col-md-3">
             <div class="teas">
-                <img class="img" src="img/欧卡.jpg"style="width: 254px">
+                <img class="img" src="img/欧卡.jpg">
                 <video muted="muted" class="tea_head" onmouseover="this.play()" onmouseout="this.pause()">
                     <source src="video/microtrailer2.mp4" type="video/mp4">
                     您的浏览器暂不支持播放该视频，请升级至最新版浏览器。
@@ -545,7 +90,7 @@
                          data-toggle="dropdown" data-offset="-141,-12">
                         <img src="img/xia.png">
                     </div>
-                    <div class="dropdown-menu menu" style="height: 110px;">
+                    <div class="dropdown-menu menu" style="height: 80px;">
                         <button class="dropdown-item">添加至您的愿望单</button>
                         <button class="dropdown-item">忽略</button>
                         <button class="dropdown-item">偏好</button>
@@ -599,7 +144,7 @@
 
         <div class="col-md-3">
             <div class="teas">
-                <img class="img" src="img/Valkyria_Chronicles_4_Complete_Edition.jpg" style="width: 254px"
+                <img class="img" src="img/Valkyria_Chronicles_4_Complete_Edition.jpg"
                      οnmοuseοver="document.getElementById('img').style.display = 'none'; "
                      οnmοuseοut="document.getElementById('img').style.display = 'block' ;">
                 <video muted="muted" class="tea_head" onmouseover="this.play()" onmouseout="this.pause()">
@@ -611,732 +156,7 @@
                          data-toggle="dropdown" data-offset="-141,-12">
                         <img src="img/xia.png">
                     </div>
-                    <div class="dropdown-menu menu" style="height: 110px;">
-                        <button class="dropdown-item">添加至您的愿望单</button>
-                        <button class="dropdown-item">忽略</button>
-                        <button class="dropdown-item">偏好</button>
-                    </div>
-                </div>
-                <div class="popout card">
-                    <div class="card-body">
-                        <h6 class="card-title">Cuphead</h6>
-                        <h6 class="card-subtitle mb-2 text-muted" style="font-size: 12px">发行于:2017年9月29日</h6>
-                        <p class="card-text">In Prey, you awaken aboard Talos I, a space station
-                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
-                            space station
-                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
-                            space station
-                        </p>
-                        <div class="evaluating">
-                            <p>总体用户评测：<br>
-                                <a href="#">多半好评</a>（42,753篇评测）</p>
-                        </div>
-                        <div class="system">
-                            <img src="img/win.png" style="width: 35px;">
-                            <img src="img/acc.png" style="width: 43px">
-                        </div>
-                        <div class="tally">
-                            <h6 style="font-size: 12px">用户标签：</h6>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                科幻</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                太空</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                氛围</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                单人</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                恐怖</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 80px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                第一人称射击</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                动作</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="discount">
-                    <div class="discount_pct">-31%</div>
-                    <div class="discount_price">¥ 68</div>
-                    <div class="discount_real">¥ 47</div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="col-md-3">
-            <div class="teas">
-                <img class="img" src="img/capsule_616x353.jpg" style="width: 254px"
-                     οnmοuseοver="document.getElementById('img').style.display = 'none'; "
-                     οnmοuseοut="document.getElementById('img').style.display = 'block' ;">
-                <video muted="muted" class="tea_head" onmouseover="this.play()" onmouseout="this.pause()">
-                    <source src="video/microtrailer5.mp4" type="video/mp4">
-                    您的浏览器暂不支持播放该视频，请升级至最新版浏览器。
-                </video>
-                <div class="options">
-                    <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
-                        <img src="img/xia.png">
-                    </div>
-                    <div class="dropdown-menu menu" style="height: 110px;">
-                        <button class="dropdown-item">添加至您的愿望单</button>
-                        <button class="dropdown-item">忽略</button>
-                        <button class="dropdown-item">偏好</button>
-                    </div>
-                </div>
-                <div class="popout3 card">
-                    <div class="card-body">
-                        <h6 class="card-title">Cuphead</h6>
-                        <h6 class="card-subtitle mb-2 text-muted" style="font-size: 12px">发行于:2017年9月29日</h6>
-                        <p class="card-text">In Prey, you awaken aboard Talos I, a space station
-                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
-                            space station
-                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
-                            space station
-                        </p>
-                        <div class="evaluating">
-                            <p>总体用户评测：<br>
-                                <a href="#">多半好评</a>（42,753篇评测）</p>
-                        </div>
-                        <div class="system">
-                            <img src="img/win.png" style="width: 35px;">
-                            <img src="img/acc.png" style="width: 43px">
-                        </div>
-                        <div class="tally">
-                            <h6 style="font-size: 12px">用户标签：</h6>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                科幻</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                太空</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                氛围</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                单人</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                恐怖</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 80px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                第一人称射击</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                动作</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="discount">
-                    <div class="discount_pct">-31%</div>
-                    <div class="discount_price">¥ 68</div>
-                    <div class="discount_real">¥ 47</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-4">
-            <div class="teas">
-                <img src="img/Grim_Dawn.jpg" style=" width:344px;
-            margin-top: 10px;">
-                <video muted="muted" class="tea_head1" onmouseover="this.play()" onmouseout="this.pause()">
-                    <source src="video/microtrailer3.mp4" type="video/mp4">
-                    您的浏览器暂不支持播放该视频，请升级至最新版浏览器。
-                </video>
-                <div class="options1">
-                    <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-140,-110">
-                        <img src="img/xia.png">
-                    </div>
-                    <div class="dropdown-menu menu" style="height: 110px;">
-                        <button class="dropdown-item">添加至您的愿望单</button>
-                        <button class="dropdown-item">忽略</button>
-                        <button class="dropdown-item">偏好</button>
-                    </div>
-                </div>
-                <div class="popout1 card">
-                    <div class="card-body">
-                        <h6 class="card-title">Cuphead</h6>
-                        <h6 class="card-subtitle mb-2 text-muted" style="font-size: 12px">发行于:2017年9月29日</h6>
-                        <p class="card-text">In Prey, you awaken aboard Talos I, a space station
-                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
-                            space station
-                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
-                            space station
-                        </p>
-                        <div class="evaluating">
-                            <p>总体用户评测：<br>
-                                <a href="#">多半好评</a>（42,753篇评测）</p>
-                        </div>
-                        <div class="system">
-                            <img src="img/win.png" style="width: 35px;">
-                            <img src="img/acc.png" style="width: 43px">
-                        </div>
-                        <div class="tally">
-                            <h6 style="font-size: 12px">用户标签：</h6>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                科幻</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                太空</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                氛围</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                单人</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                恐怖</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 80px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                第一人称射击</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                动作</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="discount1">
-                    <div class="discount_pct">-31%</div>
-                    <div class="discount_price">¥ 68</div>
-                    <div class="discount_real">¥ 47</div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="col-md-4">
-            <div class="teas">
-                <img src="img/Return_of_the_Obra_Dinn.jpg" style=" width:344px;
-            margin-top: 10px;">
-                <video muted="muted" class="tea_head1" onmouseover="this.play()" onmouseout="this.pause()">
-                    <source src="video/Return_of_the_Obra_Dinn.mp4" type="video/mp4">
-                    您的浏览器暂不支持播放该视频，请升级至最新版浏览器。
-                </video>
-                <div class="options1">
-                    <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-140,-110">
-                        <img src="img/xia.png">
-                    </div>
-                    <div class="dropdown-menu menu" style="height: 110px;">
-                        <button class="dropdown-item">添加至您的愿望单</button>
-                        <button class="dropdown-item">忽略</button>
-                        <button class="dropdown-item">偏好</button>
-                    </div>
-                </div>
-                <div class="popout1 card">
-                    <div class="card-body">
-                        <h6 class="card-title">Cuphead</h6>
-                        <h6 class="card-subtitle mb-2 text-muted" style="font-size: 12px">发行于:2017年9月29日</h6>
-                        <p class="card-text">In Prey, you awaken aboard Talos I, a space station
-                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
-                            space station
-                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
-                            space station
-                        </p>
-                        <div class="evaluating">
-                            <p>总体用户评测：<br>
-                                <a href="#">多半好评</a>（42,753篇评测）</p>
-                        </div>
-                        <div class="system">
-                            <img src="img/win.png" style="width: 35px;">
-                            <img src="img/acc.png" style="width: 43px">
-                        </div>
-                        <div class="tally">
-                            <h6 style="font-size: 12px">用户标签：</h6>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                科幻</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                太空</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                氛围</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                单人</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                恐怖</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 80px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                第一人称射击</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                动作</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="discount1">
-                    <div class="discount_pct">-31%</div>
-                    <div class="discount_price">¥ 68</div>
-                    <div class="discount_real">¥ 47</div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="col-md-4">
-            <div class="teas">
-                <img src="Valkyria_Chronicles_4_Complete_Edition.jpg" style=" width:344px;
-            margin-top: 10px;">
-                <video muted="muted" class="tea_head1" onmouseover="this.play()" onmouseout="this.pause()">
-                    <source src="video/Valkyria_Chronicles_4_Complete_Edition.mp4" type="video/mp4">
-                    您的浏览器暂不支持播放该视频，请升级至最新版浏览器。
-                </video>
-                <div class="options1">
-                    <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-140,-110">
-                        <img src="img/xia.png">
-                    </div>
-                    <div class="dropdown-menu menu" style="height: 110px;">
-                        <button class="dropdown-item">添加至您的愿望单</button>
-                        <button class="dropdown-item">忽略</button>
-                        <button class="dropdown-item">偏好</button>
-                    </div>
-                </div>
-                <div class="popout2 card">
-                    <div class="card-body">
-                        <h6 class="card-title">Cuphead</h6>
-                        <h6 class="card-subtitle mb-2 text-muted" style="font-size: 12px">发行于:2017年9月29日</h6>
-                        <p class="card-text">In Prey, you awaken aboard Talos I, a space station
-                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
-                            space station
-                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
-                            space station
-                        </p>
-                        <div class="evaluating">
-                            <p>总体用户评测：<br>
-                                <a href="#">多半好评</a>（42,753篇评测）</p>
-                        </div>
-                        <div class="system">
-                            <img src="img/win.png" style="width: 35px;">
-                            <img src="img/acc.png" style="width: 43px">
-                        </div>
-                        <div class="tally">
-                            <h6 style="font-size: 12px">用户标签：</h6>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                科幻</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                太空</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                氛围</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                单人</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                恐怖</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 80px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                第一人称射击</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                动作</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="discount1">
-                    <div class="discount_pct">-31%</div>
-                    <div class="discount_price">¥ 68</div>
-                    <div class="discount_real">¥ 47</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-3">
-            <div class="teas">
-                <img class="img" src="img/cap_616x353.jpg" style="width: 254px"
-                     οnmοuseοver="document.getElementById('img').style.display = 'none'; "
-                     οnmοuseοut="document.getElementById('img').style.display = 'block' ;">
-                <video muted="muted" class="tea_head" onmouseover="this.play()" onmouseout="this.pause()">
-                    <source src="video/microtrailer7.mp4" type="video/mp4">
-                    您的浏览器暂不支持播放该视频，请升级至最新版浏览器。
-                </video>
-                <div class="options">
-                    <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
-                        <img src="img/xia.png">
-                    </div>
-                    <div class="dropdown-menu menu" style="height: 110px;">
-                        <button class="dropdown-item">添加至您的愿望单</button>
-                        <button class="dropdown-item">忽略</button>
-                        <button class="dropdown-item">偏好</button>
-                    </div>
-                </div>
-                <div class="popout card">
-                    <div class="card-body">
-                        <h6 class="card-title">Cuphead</h6>
-                        <h6 class="card-subtitle mb-2 text-muted" style="font-size: 12px">发行于:2017年9月29日</h6>
-                        <p class="card-text">In Prey, you awaken aboard Talos I, a space station
-                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
-                            space station
-                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
-                            space station
-                        </p>
-                        <div class="evaluating">
-                            <p>总体用户评测：<br>
-                                <a href="#">多半好评</a>（42,753篇评测）</p>
-                        </div>
-                        <div class="system">
-                            <img src="img/win.png" style="width: 35px;">
-                            <img src="img/acc.png" style="width: 43px">
-                        </div>
-                        <div class="tally">
-                            <h6 style="font-size: 12px">用户标签：</h6>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                科幻</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                太空</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                氛围</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                单人</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                恐怖</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 80px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                第一人称射击</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                动作</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="discount">
-                    <div class="discount_pct">-31%</div>
-                    <div class="discount_price">¥ 68</div>
-                    <div class="discount_real">¥ 47</div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="col-md-3">
-            <div class="teas">
-                <img class="img" src="img/欧卡.jpg" style="width: 254px">
-                <video muted="muted" class="tea_head" onmouseover="this.play()" onmouseout="this.pause()">
-                    <source src="video/microtrailer8.mp4" type="video/mp4">
-                    您的浏览器暂不支持播放该视频，请升级至最新版浏览器。
-                </video>
-                <div class="options">
-                    <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
-                        <img src="img/xia.png">
-                    </div>
-                    <div class="dropdown-menu menu" style="height: 110px;">
-                        <button class="dropdown-item">添加至您的愿望单</button>
-                        <button class="dropdown-item">忽略</button>
-                        <button class="dropdown-item">偏好</button>
-                    </div>
-                </div>
-                <div class="popout card">
-                    <div class="card-body">
-                        <h6 class="card-title">Cuphead</h6>
-                        <h6 class="card-subtitle mb-2 text-muted" style="font-size: 12px">发行于:2017年9月29日</h6>
-                        <p class="card-text">In Prey, you awaken aboard Talos I, a space station
-                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
-                            space station
-                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
-                            space station
-                        </p>
-                        <div class="evaluating">
-                            <p>总体用户评测：<br>
-                                <a href="#">多半好评</a>（42,753篇评测）</p>
-                        </div>
-                        <div class="system">
-                            <img src="img/win.png" style="width: 35px;">
-                            <img src="img/acc.png" style="width: 43px">
-                        </div>
-                        <div class="tally">
-                            <h6 style="font-size: 12px">用户标签：</h6>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                科幻</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                太空</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                氛围</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                单人</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                恐怖</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 80px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                第一人称射击</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                动作</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="discount">
-                    <div class="discount_pct">-31%</div>
-                    <div class="discount_price">¥ 68</div>
-                    <div class="discount_real">¥ 47</div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="col-md-3">
-            <div class="teas">
-                <img class="img" src="img/Valkyria_Chronicles_4_Complete_Edition.jpg" style="width: 254px"
-                     οnmοuseοver="document.getElementById('img').style.display = 'none'; "
-                     οnmοuseοut="document.getElementById('img').style.display = 'block' ;">
-                <video muted="muted" class="tea_head" onmouseover="this.play()" onmouseout="this.pause()">
-                    <source src="video/microtrailer9.mp4" type="video/mp4">
-                    您的浏览器暂不支持播放该视频，请升级至最新版浏览器。
-                </video>
-                <div class="options">
-                    <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
-                        <img src="img/xia.png">
-                    </div>
-                    <div class="dropdown-menu menu" style="height: 110px;">
-                        <button class="dropdown-item">添加至您的愿望单</button>
-                        <button class="dropdown-item">忽略</button>
-                        <button class="dropdown-item">偏好</button>
-                    </div>
-                </div>
-                <div class="popout card">
-                    <div class="card-body">
-                        <h6 class="card-title">Cuphead</h6>
-                        <h6 class="card-subtitle mb-2 text-muted" style="font-size: 12px">发行于:2017年9月29日</h6>
-                        <p class="card-text">In Prey, you awaken aboard Talos I, a space station
-                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
-                            space station
-                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
-                            space station
-                        </p>
-                        <div class="evaluating">
-                            <p>总体用户评测：<br>
-                                <a href="#">多半好评</a>（42,753篇评测）</p>
-                        </div>
-                        <div class="system">
-                            <img src="img/win.png" style="width: 35px;">
-                            <img src="img/acc.png" style="width: 43px">
-                        </div>
-                        <div class="tally">
-                            <h6 style="font-size: 12px">用户标签：</h6>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                科幻</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                太空</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                氛围</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                单人</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                恐怖</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 80px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                第一人称射击</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                动作</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="discount">
-                    <div class="discount_pct">-31%</div>
-                    <div class="discount_price">¥ 68</div>
-                    <div class="discount_real">¥ 47</div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="col-md-3">
-            <div class="teas">
-                <img class="img" src="img/ca.jpg"
-                     οnmοuseοver="document.getElementById('img').style.display = 'none'; "
-                     οnmοuseοut="document.getElementById('img').style.display = 'block' ;">
-                <video muted="muted" class="tea_head" onmouseover="this.play()" onmouseout="this.pause()">
-                    <source src="video/microtrailer6.mp4" type="video/mp4">
-                    您的浏览器暂不支持播放该视频，请升级至最新版浏览器。
-                </video>
-                <div class="options">
-                    <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
-                        <img src="img/xia.png">
-                    </div>
-                    <div class="dropdown-menu menu" style="height: 110px;">
-                        <button class="dropdown-item">添加至您的愿望单</button>
-                        <button class="dropdown-item">忽略</button>
-                        <button class="dropdown-item">偏好</button>
-                    </div>
-                </div>
-                <div class="popout3 card">
-                    <div class="card-body">
-                        <h6 class="card-title">Cuphead</h6>
-                        <h6 class="card-subtitle mb-2 text-muted" style="font-size: 12px">发行于:2017年9月29日</h6>
-                        <p class="card-text">In Prey, you awaken aboard Talos I, a space station
-                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
-                            space station
-                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
-                            space station
-                        </p>
-                        <div class="evaluating">
-                            <p>总体用户评测：<br>
-                                <a href="#">多半好评</a>（42,753篇评测）</p>
-                        </div>
-                        <div class="system">
-                            <img src="img/win.png" style="width: 35px;">
-                            <img src="img/acc.png" style="width: 43px">
-                        </div>
-                        <div class="tally">
-                            <h6 style="font-size: 12px">用户标签：</h6>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                科幻</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                太空</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                氛围</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                单人</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                恐怖</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 80px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                第一人称射击</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                动作</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="discount">
-                    <div class="discount_pct">-31%</div>
-                    <div class="discount_price">¥ 68</div>
-                    <div class="discount_real">¥ 47</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-3">
-            <div class="teas">
-                <img class="img" src="img/茶杯头.jpg" style="width: 254px"
-                     οnmοuseοver="document.getElementById('img').style.display = 'none'; "
-                     οnmοuseοut="document.getElementById('img').style.display = 'block' ;">
-                <video muted="muted" class="tea_head" onmouseover="this.play()" onmouseout="this.pause()">
-                    <source src="video/microtrailer.mp4" type="video/mp4">
-                    您的浏览器暂不支持播放该视频，请升级至最新版浏览器。
-                </video>
-                <div class="options">
-                    <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
-                        <img src="img/xia.png">
-                    </div>
-                    <div class="dropdown-menu menu" style="height: 110px;">
-                        <button class="dropdown-item">添加至您的愿望单</button>
-                        <button class="dropdown-item">忽略</button>
-                        <button class="dropdown-item">偏好</button>
-                    </div>
-                </div>
-                <div class="popout card">
-                    <div class="card-body">
-                        <h6 class="card-title">Cuphead</h6>
-                        <h6 class="card-subtitle mb-2 text-muted" style="font-size: 12px">发行于:2017年9月29日</h6>
-                        <p class="card-text">In Prey, you awaken aboard Talos I, a space station
-                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
-                            space station
-                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
-                            space station
-                        </p>
-                        <div class="evaluating">
-                            <p>总体用户评测：<br>
-                                <a href="#">多半好评</a>（42,753篇评测）</p>
-                        </div>
-                        <div class="system">
-                            <img src="img/win.png" style="width: 35px;">
-                            <img src="img/acc.png" style="width: 43px">
-                        </div>
-                        <div class="tally">
-                            <h6 style="font-size: 12px">用户标签：</h6>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                科幻</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                太空</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                氛围</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                单人</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                恐怖</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 80px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                第一人称射击</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                动作</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="discount">
-                    <div class="discount_pct">-31%</div>
-                    <div class="discount_price">¥ 68</div>
-                    <div class="discount_real">¥ 47</div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="col-md-3">
-            <div class="teas">
-                <img class="img" src="img/欧卡.jpg" style="width: 254px">
-                <video muted="muted" class="tea_head" onmouseover="this.play()" onmouseout="this.pause()">
-                    <source src="video/microtrailer2.mp4" type="video/mp4">
-                    您的浏览器暂不支持播放该视频，请升级至最新版浏览器。
-                </video>
-                <div class="options">
-                    <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
-                        <img src="img/xia.png">
-                    </div>
-                    <div class="dropdown-menu menu" style="height: 110px;">
-                        <button class="dropdown-item">添加至您的愿望单</button>
-                        <button class="dropdown-item">忽略</button>
-                        <button class="dropdown-item">偏好</button>
-                    </div>
-                </div>
-                <div class="popout card">
-                    <div class="card-body">
-                        <h6 class="card-title">Cuphead</h6>
-                        <h6 class="card-subtitle mb-2 text-muted" style="font-size: 12px">发行于:2017年9月29日</h6>
-                        <p class="card-text">In Prey, you awaken aboard Talos I, a space station
-                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
-                            space station
-                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
-                            space station
-                        </p>
-                        <div class="evaluating">
-                            <p>总体用户评测：<br>
-                                <a href="#">多半好评</a>（42,753篇评测）</p>
-                        </div>
-                        <div class="system">
-                            <img src="img/win.png" style="width: 35px;">
-                            <img src="img/acc.png" style="width: 43px">
-                        </div>
-                        <div class="tally">
-                            <h6 style="font-size: 12px">用户标签：</h6>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                科幻</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                太空</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                氛围</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                单人</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                恐怖</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 80px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                第一人称射击</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                动作</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="discount">
-                    <div class="discount_pct">-31%</div>
-                    <div class="discount_price">¥ 68</div>
-                    <div class="discount_real">¥ 47</div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="col-md-3">
-            <div class="teas">
-                <img class="img" src="img/Valkyria_Chronicles_4_Complete_Edition.jpg" style="width: 254px"
-                     οnmοuseοver="document.getElementById('img').style.display = 'none'; "
-                     οnmοuseοut="document.getElementById('img').style.display = 'block' ;">
-                <video muted="muted" class="tea_head" onmouseover="this.play()" onmouseout="this.pause()">
-                    <source src="video/microtrailer4.mp4" type="video/mp4">
-                    您的浏览器暂不支持播放该视频，请升级至最新版浏览器。
-                </video>
-                <div class="options">
-                    <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
-                        <img src="img/xia.png">
-                    </div>
-                    <div class="dropdown-menu menu" style="height: 110px;">
+                    <div class="dropdown-menu menu" style="height: 80px;">
                         <button class="dropdown-item">添加至您的愿望单</button>
                         <button class="dropdown-item">忽略</button>
                         <button class="dropdown-item">偏好</button>
@@ -1402,6 +222,738 @@
                          data-toggle="dropdown" data-offset="-141,-12">
                         <img src="img/xia.png">
                     </div>
+                    <div class="dropdown-menu menu" style="height: 80px;">
+                        <button class="dropdown-item">添加至您的愿望单</button>
+                        <button class="dropdown-item">忽略</button>
+                        <button class="dropdown-item">偏好</button>
+                    </div>
+                </div>
+                <div class="popout3 card">
+                    <div class="card-body">
+                        <h6 class="card-title">Cuphead</h6>
+                        <h6 class="card-subtitle mb-2 text-muted" style="font-size: 12px">发行于:2017年9月29日</h6>
+                        <p class="card-text">In Prey, you awaken aboard Talos I, a space station
+                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
+                            space station
+                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
+                            space station
+                        </p>
+                        <div class="evaluating">
+                            <p>总体用户评测：<br>
+                                <a href="#">多半好评</a>（42,753篇评测）</p>
+                        </div>
+                        <div class="system">
+                            <img src="img/win.png" style="width: 35px;">
+                            <img src="img/acc.png" style="width: 43px">
+                        </div>
+                        <div class="tally">
+                            <h6 style="font-size: 12px">用户标签：</h6>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                科幻</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                太空</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                氛围</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                单人</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                恐怖</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 80px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                第一人称射击</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                动作</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="discount">
+                    <div class="discount_pct">-31%</div>
+                    <div class="discount_price">¥ 68</div>
+                    <div class="discount_real">¥ 47</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="teas">
+                <img src="img/Grim_Dawn.jpg" style="margin-top: 10px;">
+                <video muted="muted" class="tea_head1" onmouseover="this.play()" onmouseout="this.pause()">
+                    <source src="video/microtrailer3.mp4" type="video/mp4">
+                    您的浏览器暂不支持播放该视频，请升级至最新版浏览器。
+                </video>
+                <div class="options1">
+                    <div class="dropdown-toggle toggle"
+                         data-toggle="dropdown" data-offset="-140,-110">
+                        <img src="img/xia.png">
+                    </div>
+                    <div class="dropdown-menu menu" style="height: 110px;">
+                        <button class="dropdown-item">添加至您的愿望单</button>
+                        <button class="dropdown-item">忽略</button>
+                        <button class="dropdown-item">偏好</button>
+                    </div>
+                </div>
+                <div class="popout1 card">
+                    <div class="card-body">
+                        <h6 class="card-title">Cuphead</h6>
+                        <h6 class="card-subtitle mb-2 text-muted" style="font-size: 12px">发行于:2017年9月29日</h6>
+                        <p class="card-text">In Prey, you awaken aboard Talos I, a space station
+                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
+                            space station
+                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
+                            space station
+                        </p>
+                        <div class="evaluating">
+                            <p>总体用户评测：<br>
+                                <a href="#">多半好评</a>（42,753篇评测）</p>
+                        </div>
+                        <div class="system">
+                            <img src="img/win.png" style="width: 35px;">
+                            <img src="img/acc.png" style="width: 43px">
+                        </div>
+                        <div class="tally">
+                            <h6 style="font-size: 12px">用户标签：</h6>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                科幻</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                太空</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                氛围</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                单人</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                恐怖</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 80px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                第一人称射击</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                动作</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="discount1">
+                    <div class="discount_pct">-31%</div>
+                    <div class="discount_price">¥ 68</div>
+                    <div class="discount_real">¥ 47</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-4">
+            <div class="teas">
+                <img src="img/Return_of_the_Obra_Dinn.jpg" style=" width:344px;
+            margin-top: 10px;">
+                <video muted="muted" class="tea_head1" onmouseover="this.play()" onmouseout="this.pause()">
+                    <source src="video/Return_of_the_Obra_Dinn.mp4" type="video/mp4">
+                    您的浏览器暂不支持播放该视频，请升级至最新版浏览器。
+                </video>
+                <div class="options1">
+                    <div class="dropdown-toggle toggle"
+                         data-toggle="dropdown" data-offset="-140,-110">
+                        <img src="img/xia.png">
+                    </div>
+                    <div class="dropdown-menu menu" style="height: 110px;">
+                        <button class="dropdown-item">添加至您的愿望单</button>
+                        <button class="dropdown-item">忽略</button>
+                        <button class="dropdown-item">偏好</button>
+                    </div>
+                </div>
+                <div class="popout1 card">
+                    <div class="card-body">
+                        <h6 class="card-title">Cuphead</h6>
+                        <h6 class="card-subtitle mb-2 text-muted" style="font-size: 12px">发行于:2017年9月29日</h6>
+                        <p class="card-text">In Prey, you awaken aboard Talos I, a space station
+                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
+                            space station
+                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
+                            space station
+                        </p>
+                        <div class="evaluating">
+                            <p>总体用户评测：<br>
+                                <a href="#">多半好评</a>（42,753篇评测）</p>
+                        </div>
+                        <div class="system">
+                            <img src="img/win.png" style="width: 35px;">
+                            <img src="img/acc.png" style="width: 43px">
+                        </div>
+                        <div class="tally">
+                            <h6 style="font-size: 12px">用户标签：</h6>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                科幻</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                太空</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                氛围</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                单人</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                恐怖</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 80px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                第一人称射击</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                动作</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="discount1">
+                    <div class="discount_pct">-31%</div>
+                    <div class="discount_price">¥ 68</div>
+                    <div class="discount_real">¥ 47</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-4">
+            <div class="teas">
+                <img src="Valkyria_Chronicles_4_Complete_Edition.jpg" style=" width:344px;
+            margin-top: 10px;">
+                <video muted="muted" class="tea_head1" onmouseover="this.play()" onmouseout="this.pause()">
+                    <source src="video/Valkyria_Chronicles_4_Complete_Edition.mp4" type="video/mp4">
+                    您的浏览器暂不支持播放该视频，请升级至最新版浏览器。
+                </video>
+                <div class="options1">
+                    <div class="dropdown-toggle toggle"
+                         data-toggle="dropdown" data-offset="-140,-110">
+                        <img src="img/xia.png">
+                    </div>
+                    <div class="dropdown-menu menu" style="height: 110px;">
+                        <button class="dropdown-item">添加至您的愿望单</button>
+                        <button class="dropdown-item">忽略</button>
+                        <button class="dropdown-item">偏好</button>
+                    </div>
+                </div>
+                <div class="popout2 card">
+                    <div class="card-body">
+                        <h6 class="card-title">Cuphead</h6>
+                        <h6 class="card-subtitle mb-2 text-muted" style="font-size: 12px">发行于:2017年9月29日</h6>
+                        <p class="card-text">In Prey, you awaken aboard Talos I, a space station
+                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
+                            space station
+                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
+                            space station
+                        </p>
+                        <div class="evaluating">
+                            <p>总体用户评测：<br>
+                                <a href="#">多半好评</a>（42,753篇评测）</p>
+                        </div>
+                        <div class="system">
+                            <img src="img/win.png" style="width: 35px;">
+                            <img src="img/acc.png" style="width: 43px">
+                        </div>
+                        <div class="tally">
+                            <h6 style="font-size: 12px">用户标签：</h6>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                科幻</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                太空</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                氛围</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                单人</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                恐怖</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 80px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                第一人称射击</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                动作</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="discount1">
+                    <div class="discount_pct">-31%</div>
+                    <div class="discount_price">¥ 68</div>
+                    <div class="discount_real">¥ 47</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="teas">
+                <img class="img" src="img/cap_616x353.jpg" style="width: 80px"
+                     οnmοuseοver="document.getElementById('img').style.display = 'none'; "
+                     οnmοuseοut="document.getElementById('img').style.display = 'block' ;">
+                <video muted="muted" class="tea_head" onmouseover="this.play()" onmouseout="this.pause()">
+                    <source src="video/microtrailer7.mp4" type="video/mp4">
+                    您的浏览器暂不支持播放该视频，请升级至最新版浏览器。
+                </video>
+                <div class="options">
+                    <div class="dropdown-toggle toggle"
+                         data-toggle="dropdown" data-offset="-140,-110">
+                        <img src="img/xia.png">
+                    </div>
+                    <div class="dropdown-menu menu" style="height: 110px;">
+                        <button class="dropdown-item">添加至您的愿望单</button>
+                        <button class="dropdown-item">忽略</button>
+                        <button class="dropdown-item">偏好</button>
+                    </div>
+                </div>
+                <div class="popout card">
+                    <div class="card-body">
+                        <h6 class="card-title">Cuphead</h6>
+                        <h6 class="card-subtitle mb-2 text-muted" style="font-size: 12px">发行于:2017年9月29日</h6>
+                        <p class="card-text">In Prey, you awaken aboard Talos I, a space station
+                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
+                            space station
+                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
+                            space station
+                        </p>
+                        <div class="evaluating">
+                            <p>总体用户评测：<br>
+                                <a href="#">多半好评</a>（42,753篇评测）</p>
+                        </div>
+                        <div class="system">
+                            <img src="img/win.png" style="width: 35px;">
+                            <img src="img/acc.png" style="width: 43px">
+                        </div>
+                        <div class="tally">
+                            <h6 style="font-size: 12px">用户标签：</h6>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                科幻</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                太空</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                氛围</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                单人</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                恐怖</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 80px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                第一人称射击</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                动作</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="discount">
+                    <div class="discount_pct">-31%</div>
+                    <div class="discount_price">¥ 68</div>
+                    <div class="discount_real">¥ 47</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-3">
+            <div class="teas">
+                <img class="img" src="img/欧卡.jpg" style="width: 254px">
+                <video muted="muted" class="tea_head" onmouseover="this.play()" onmouseout="this.pause()">
+                    <source src="video/microtrailer8.mp4" type="video/mp4">
+                    您的浏览器暂不支持播放该视频，请升级至最新版浏览器。
+                </video>
+                <div class="options">
+                    <div class="dropdown-toggle toggle"
+                         data-toggle="dropdown" data-offset="-140,-110">
+                        <img src="img/xia.png">
+                    </div>
+                    <div class="dropdown-menu menu" style="height: 110px;">
+                        <button class="dropdown-item">添加至您的愿望单</button>
+                        <button class="dropdown-item">忽略</button>
+                        <button class="dropdown-item">偏好</button>
+                    </div>
+                </div>
+                <div class="popout card">
+                    <div class="card-body">
+                        <h6 class="card-title">Cuphead</h6>
+                        <h6 class="card-subtitle mb-2 text-muted" style="font-size: 12px">发行于:2017年9月29日</h6>
+                        <p class="card-text">In Prey, you awaken aboard Talos I, a space station
+                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
+                            space station
+                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
+                            space station
+                        </p>
+                        <div class="evaluating">
+                            <p>总体用户评测：<br>
+                                <a href="#">多半好评</a>（42,753篇评测）</p>
+                        </div>
+                        <div class="system">
+                            <img src="img/win.png" style="width: 35px;">
+                            <img src="img/acc.png" style="width: 43px">
+                        </div>
+                        <div class="tally">
+                            <h6 style="font-size: 12px">用户标签：</h6>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                科幻</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                太空</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                氛围</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                单人</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                恐怖</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 80px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                第一人称射击</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                动作</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="discount">
+                    <div class="discount_pct">-31%</div>
+                    <div class="discount_price">¥ 68</div>
+                    <div class="discount_real">¥ 47</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-3">
+            <div class="teas">
+                <img class="img" src="img/Valkyria_Chronicles_4_Complete_Edition.jpg" style="width: 254px"
+                     οnmοuseοver="document.getElementById('img').style.display = 'none'; "
+                     οnmοuseοut="document.getElementById('img').style.display = 'block' ;">
+                <video muted="muted" class="tea_head" onmouseover="this.play()" onmouseout="this.pause()">
+                    <source src="video/microtrailer9.mp4" type="video/mp4">
+                    您的浏览器暂不支持播放该视频，请升级至最新版浏览器。
+                </video>
+                <div class="options">
+                    <div class="dropdown-toggle toggle"
+                         data-toggle="dropdown" data-offset="-140,-110">
+                        <img src="img/xia.png">
+                    </div>
+                    <div class="dropdown-menu menu" style="height: 110px;">
+                        <button class="dropdown-item">添加至您的愿望单</button>
+                        <button class="dropdown-item">忽略</button>
+                        <button class="dropdown-item">偏好</button>
+                    </div>
+                </div>
+                <div class="popout card">
+                    <div class="card-body">
+                        <h6 class="card-title">Cuphead</h6>
+                        <h6 class="card-subtitle mb-2 text-muted" style="font-size: 12px">发行于:2017年9月29日</h6>
+                        <p class="card-text">In Prey, you awaken aboard Talos I, a space station
+                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
+                            space station
+                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
+                            space station
+                        </p>
+                        <div class="evaluating">
+                            <p>总体用户评测：<br>
+                                <a href="#">多半好评</a>（42,753篇评测）</p>
+                        </div>
+                        <div class="system">
+                            <img src="img/win.png" style="width: 35px;">
+                            <img src="img/acc.png" style="width: 43px">
+                        </div>
+                        <div class="tally">
+                            <h6 style="font-size: 12px">用户标签：</h6>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                科幻</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                太空</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                氛围</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                单人</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                恐怖</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 80px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                第一人称射击</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                动作</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="discount">
+                    <div class="discount_pct">-31%</div>
+                    <div class="discount_price">¥ 68</div>
+                    <div class="discount_real">¥ 47</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-3">
+            <div class="teas">
+                <img class="img" src="img/ca.jpg"
+                     οnmοuseοver="document.getElementById('img').style.display = 'none'; "
+                     οnmοuseοut="document.getElementById('img').style.display = 'block' ;">
+                <video muted="muted" class="tea_head" onmouseover="this.play()" onmouseout="this.pause()">
+                    <source src="video/microtrailer6.mp4" type="video/mp4">
+                    您的浏览器暂不支持播放该视频，请升级至最新版浏览器。
+                </video>
+                <div class="options">
+                    <div class="dropdown-toggle toggle"
+                         data-toggle="dropdown" data-offset="-140,-110">
+                        <img src="img/xia.png">
+                    </div>
+                    <div class="dropdown-menu menu" style="height: 110px;">
+                        <button class="dropdown-item">添加至您的愿望单</button>
+                        <button class="dropdown-item">忽略</button>
+                        <button class="dropdown-item">偏好</button>
+                    </div>
+                </div>
+                <div class="popout3 card">
+                    <div class="card-body">
+                        <h6 class="card-title">Cuphead</h6>
+                        <h6 class="card-subtitle mb-2 text-muted" style="font-size: 12px">发行于:2017年9月29日</h6>
+                        <p class="card-text">In Prey, you awaken aboard Talos I, a space station
+                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
+                            space station
+                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
+                            space station
+                        </p>
+                        <div class="evaluating">
+                            <p>总体用户评测：<br>
+                                <a href="#">多半好评</a>（42,753篇评测）</p>
+                        </div>
+                        <div class="system">
+                            <img src="img/win.png" style="width: 35px;">
+                            <img src="img/acc.png" style="width: 43px">
+                        </div>
+                        <div class="tally">
+                            <h6 style="font-size: 12px">用户标签：</h6>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                科幻</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                太空</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                氛围</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                单人</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                恐怖</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 80px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                第一人称射击</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                动作</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="discount">
+                    <div class="discount_pct">-31%</div>
+                    <div class="discount_price">¥ 68</div>
+                    <div class="discount_real">¥ 47</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--  2019年度最佳  -->
+<div class="ls-best container" >
+    <div class="best container">
+        <a href=""><img src="img/banner_top2019_schinese.jpg" width="1200"></a>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="teas">
+                <img class="img" src="img/茶杯头.jpg" style="width: 80px"
+                     οnmοuseοver="document.getElementById('img').style.display = 'none'; "
+                     οnmοuseοut="document.getElementById('img').style.display = 'block' ;">
+                <video muted="muted" class="tea_head" onmouseover="this.play()" onmouseout="this.pause()">
+                    <source src="video/microtrailer.mp4" type="video/mp4">
+                    您的浏览器暂不支持播放该视频，请升级至最新版浏览器。
+                </video>
+                <div class="options">
+                    <div class="dropdown-toggle toggle"
+                         data-toggle="dropdown" data-offset="-140,-110">
+                        <img src="img/xia.png">
+                    </div>
+                    <div class="dropdown-menu menu" style="height: 110px;">
+                        <button class="dropdown-item">添加至您的愿望单</button>
+                        <button class="dropdown-item">忽略</button>
+                        <button class="dropdown-item">偏好</button>
+                    </div>
+                </div>
+                <div class="popout card">
+                    <div class="card-body">
+                        <h6 class="card-title">Cuphead</h6>
+                        <h6 class="card-subtitle mb-2 text-muted" style="font-size: 12px">发行于:2017年9月29日</h6>
+                        <p class="card-text">In Prey, you awaken aboard Talos I, a space station
+                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
+                            space station
+                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
+                            space station
+                        </p>
+                        <div class="evaluating">
+                            <p>总体用户评测：<br>
+                                <a href="#">多半好评</a>（42,753篇评测）</p>
+                        </div>
+                        <div class="system">
+                            <img src="img/win.png" style="width: 35px;">
+                            <img src="img/acc.png" style="width: 43px">
+                        </div>
+                        <div class="tally">
+                            <h6 style="font-size: 12px">用户标签：</h6>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                科幻</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                太空</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                氛围</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                单人</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                恐怖</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 80px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                第一人称射击</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                动作</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="discount">
+                    <div class="discount_pct">-31%</div>
+                    <div class="discount_price">¥ 68</div>
+                    <div class="discount_real">¥ 47</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-3">
+            <div class="teas">
+                <img class="img" src="img/欧卡.jpg" style="width: 254px">
+                <video muted="muted" class="tea_head" onmouseover="this.play()" onmouseout="this.pause()">
+                    <source src="video/microtrailer2.mp4" type="video/mp4">
+                    您的浏览器暂不支持播放该视频，请升级至最新版浏览器。
+                </video>
+                <div class="options">
+                    <div class="dropdown-toggle toggle"
+                         data-toggle="dropdown" data-offset="-140,-110">
+                        <img src="img/xia.png">
+                    </div>
+                    <div class="dropdown-menu menu" style="height: 110px;">
+                        <button class="dropdown-item">添加至您的愿望单</button>
+                        <button class="dropdown-item">忽略</button>
+                        <button class="dropdown-item">偏好</button>
+                    </div>
+                </div>
+                <div class="popout card">
+                    <div class="card-body">
+                        <h6 class="card-title">Cuphead</h6>
+                        <h6 class="card-subtitle mb-2 text-muted" style="font-size: 12px">发行于:2017年9月29日</h6>
+                        <p class="card-text">In Prey, you awaken aboard Talos I, a space station
+                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
+                            space station
+                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
+                            space station
+                        </p>
+                        <div class="evaluating">
+                            <p>总体用户评测：<br>
+                                <a href="#">多半好评</a>（42,753篇评测）</p>
+                        </div>
+                        <div class="system">
+                            <img src="img/win.png" style="width: 35px;">
+                            <img src="img/acc.png" style="width: 43px">
+                        </div>
+                        <div class="tally">
+                            <h6 style="font-size: 12px">用户标签：</h6>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                科幻</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                太空</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                氛围</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                单人</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                恐怖</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 80px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                第一人称射击</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                动作</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="discount">
+                    <div class="discount_pct">-31%</div>
+                    <div class="discount_price">¥ 68</div>
+                    <div class="discount_real">¥ 47</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-3">
+            <div class="teas">
+                <img class="img" src="img/Valkyria_Chronicles_4_Complete_Edition.jpg" style="width: 254px"
+                     οnmοuseοver="document.getElementById('img').style.display = 'none'; "
+                     οnmοuseοut="document.getElementById('img').style.display = 'block' ;">
+                <video muted="muted" class="tea_head" onmouseover="this.play()" onmouseout="this.pause()">
+                    <source src="video/microtrailer4.mp4" type="video/mp4">
+                    您的浏览器暂不支持播放该视频，请升级至最新版浏览器。
+                </video>
+                <div class="options">
+                    <div class="dropdown-toggle toggle"
+                         data-toggle="dropdown" data-offset="-140,-110">
+                        <img src="img/xia.png">
+                    </div>
+                    <div class="dropdown-menu menu" style="height: 110px;">
+                        <button class="dropdown-item">添加至您的愿望单</button>
+                        <button class="dropdown-item">忽略</button>
+                        <button class="dropdown-item">偏好</button>
+                    </div>
+                </div>
+                <div class="popout card">
+                    <div class="card-body">
+                        <h6 class="card-title">Cuphead</h6>
+                        <h6 class="card-subtitle mb-2 text-muted" style="font-size: 12px">发行于:2017年9月29日</h6>
+                        <p class="card-text">In Prey, you awaken aboard Talos I, a space station
+                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
+                            space station
+                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
+                            space station
+                        </p>
+                        <div class="evaluating">
+                            <p>总体用户评测：<br>
+                                <a href="#">多半好评</a>（42,753篇评测）</p>
+                        </div>
+                        <div class="system">
+                            <img src="img/win.png" style="width: 35px;">
+                            <img src="img/acc.png" style="width: 43px">
+                        </div>
+                        <div class="tally">
+                            <h6 style="font-size: 12px">用户标签：</h6>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                科幻</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                太空</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                氛围</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                单人</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                恐怖</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 80px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                第一人称射击</p>
+                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
+                                动作</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="discount">
+                    <div class="discount_pct">-31%</div>
+                    <div class="discount_price">¥ 68</div>
+                    <div class="discount_real">¥ 47</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-3">
+            <div class="teas">
+                <img class="img" src="img/capsule_616x353.jpg"
+                     οnmοuseοver="document.getElementById('img').style.display = 'none'; "
+                     οnmοuseοut="document.getElementById('img').style.display = 'block' ;">
+                <video muted="muted" class="tea_head" onmouseover="this.play()" onmouseout="this.pause()">
+                    <source src="video/microtrailer5.mp4" type="video/mp4">
+                    您的浏览器暂不支持播放该视频，请升级至最新版浏览器。
+                </video>
+                <div class="options">
+                    <div class="dropdown-toggle toggle"
+                         data-toggle="dropdown" data-offset="-140,-110">
+                        <img src="img/xia.png">
+                    </div>
                     <div class="dropdown-menu menu" style="height: 110px;">
                         <button class="dropdown-item">添加至您的愿望单</button>
                         <button class="dropdown-item">忽略</button>
@@ -1653,7 +1205,7 @@
     <div class="row">
         <div class="col-md-3">
             <div class="teas">
-                <img class="img" src="img/cap_616x353.jpg" style="width: 254px"
+                <img class="img" src="img/cap_616x353.jpg" style="width: 80px"
                      οnmοuseοver="document.getElementById('img').style.display = 'none'; "
                      οnmοuseοut="document.getElementById('img').style.display = 'block' ;">
                 <video muted="muted" class="tea_head" onmouseover="this.play()" onmouseout="this.pause()">
@@ -1662,7 +1214,7 @@
                 </video>
                 <div class="options">
                     <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
+                         data-toggle="dropdown" data-offset="-140,-110">
                         <img src="img/xia.png">
                     </div>
                     <div class="dropdown-menu menu" style="height: 110px;">
@@ -1726,7 +1278,7 @@
                 </video>
                 <div class="options">
                     <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
+                         data-toggle="dropdown" data-offset="-140,-110">
                         <img src="img/xia.png">
                     </div>
                     <div class="dropdown-menu menu" style="height: 110px;">
@@ -1792,7 +1344,7 @@
                 </video>
                 <div class="options">
                     <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
+                         data-toggle="dropdown" data-offset="-140,-110">
                         <img src="img/xia.png">
                     </div>
                     <div class="dropdown-menu menu" style="height: 110px;">
@@ -1858,7 +1410,7 @@
                 </video>
                 <div class="options">
                     <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
+                         data-toggle="dropdown" data-offset="-140,-110">
                         <img src="img/xia.png">
                     </div>
                     <div class="dropdown-menu menu" style="height: 110px;">
@@ -1944,7 +1496,7 @@
                 </video>
                 <div class="options">
                     <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
+                         data-toggle="dropdown" data-offset="-140,-110">
                         <img src="img/xia.png">
                     </div>
                     <div class="dropdown-menu menu" style="height: 110px;">
@@ -2008,7 +1560,7 @@
                 </video>
                 <div class="options">
                     <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
+                         data-toggle="dropdown" data-offset="-140,-110">
                         <img src="img/xia.png">
                     </div>
                     <div class="dropdown-menu menu" style="height: 110px;">
@@ -2074,7 +1626,7 @@
                 </video>
                 <div class="options">
                     <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
+                         data-toggle="dropdown" data-offset="-140,-110">
                         <img src="img/xia.png">
                     </div>
                     <div class="dropdown-menu menu" style="height: 110px;">
@@ -2140,7 +1692,7 @@
                 </video>
                 <div class="options">
                     <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
+                         data-toggle="dropdown" data-offset="-140,-110">
                         <img src="img/xia.png">
                     </div>
                     <div class="dropdown-menu menu" style="height: 110px;">
@@ -2207,7 +1759,7 @@
                 </video>
                 <div class="options">
                     <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
+                         data-toggle="dropdown" data-offset="-140,-110">
                         <img src="img/xia.png">
                     </div>
                     <div class="dropdown-menu menu" style="height: 110px;">
@@ -2271,7 +1823,7 @@
                 </video>
                 <div class="options">
                     <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
+                         data-toggle="dropdown" data-offset="-140,-110">
                         <img src="img/xia.png">
                     </div>
                     <div class="dropdown-menu menu" style="height: 110px;">
@@ -2337,7 +1889,7 @@
                 </video>
                 <div class="options">
                     <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
+                         data-toggle="dropdown" data-offset="-140,-110">
                         <img src="img/xia.png">
                     </div>
                     <div class="dropdown-menu menu" style="height: 110px;">
@@ -2403,7 +1955,7 @@
                 </video>
                 <div class="options">
                     <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
+                         data-toggle="dropdown" data-offset="-140,-110">
                         <img src="img/xia.png">
                     </div>
                     <div class="dropdown-menu menu" style="height: 110px;">
@@ -2470,7 +2022,7 @@
                 </video>
                 <div class="options">
                     <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
+                         data-toggle="dropdown" data-offset="-140,-110">
                         <img src="img/xia.png">
                     </div>
                     <div class="dropdown-menu menu" style="height: 110px;">
@@ -2534,7 +2086,7 @@
                 </video>
                 <div class="options">
                     <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
+                         data-toggle="dropdown" data-offset="-140,-110">
                         <img src="img/xia.png">
                     </div>
                     <div class="dropdown-menu menu" style="height: 110px;">
@@ -2600,7 +2152,7 @@
                 </video>
                 <div class="options">
                     <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
+                         data-toggle="dropdown" data-offset="-140,-110">
                         <img src="img/xia.png">
                     </div>
                     <div class="dropdown-menu menu" style="height: 110px;">
@@ -2666,7 +2218,7 @@
                 </video>
                 <div class="options">
                     <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
+                         data-toggle="dropdown" data-offset="-140,-110">
                         <img src="img/xia.png">
                     </div>
                     <div class="dropdown-menu menu" style="height: 110px;">
@@ -2733,7 +2285,7 @@
                 </video>
                 <div class="options">
                     <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
+                         data-toggle="dropdown" data-offset="-140,-110">
                         <img src="img/xia.png">
                     </div>
                     <div class="dropdown-menu menu" style="height: 110px;">
@@ -2797,7 +2349,7 @@
                 </video>
                 <div class="options">
                     <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
+                         data-toggle="dropdown" data-offset="-140,-110">
                         <img src="img/xia.png">
                     </div>
                     <div class="dropdown-menu menu" style="height: 110px;">
@@ -2863,7 +2415,7 @@
                 </video>
                 <div class="options">
                     <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
+                         data-toggle="dropdown" data-offset="-140,-110">
                         <img src="img/xia.png">
                     </div>
                     <div class="dropdown-menu menu" style="height: 110px;">
@@ -2929,7 +2481,7 @@
                 </video>
                 <div class="options">
                     <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
+                         data-toggle="dropdown" data-offset="-140,-110">
                         <img src="img/xia.png">
                     </div>
                     <div class="dropdown-menu menu" style="height: 110px;">
@@ -3067,7 +2619,7 @@
                 </video>
                 <div class="options">
                     <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
+                         data-toggle="dropdown" data-offset="-140,-110">
                         <img src="img/xia.png">
                     </div>
                     <div class="dropdown-menu menu" style="height: 110px;">
@@ -3131,7 +2683,7 @@
                 </video>
                 <div class="options">
                     <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
+                         data-toggle="dropdown" data-offset="-140,-110">
                         <img src="img/xia.png">
                     </div>
                     <div class="dropdown-menu menu" style="height: 110px;">
@@ -3197,7 +2749,7 @@
                 </video>
                 <div class="options">
                     <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
+                         data-toggle="dropdown" data-offset="-140,-110">
                         <img src="img/xia.png">
                     </div>
                     <div class="dropdown-menu menu" style="height: 110px;">
@@ -3263,7 +2815,7 @@
                 </video>
                 <div class="options">
                     <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
+                         data-toggle="dropdown" data-offset="-140,-110">
                         <img src="img/xia.png">
                     </div>
                     <div class="dropdown-menu menu" style="height: 110px;">
@@ -3330,7 +2882,7 @@
                 </video>
                 <div class="options">
                     <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
+                         data-toggle="dropdown" data-offset="-140,-110">
                         <img src="img/xia.png">
                     </div>
                     <div class="dropdown-menu menu" style="height: 110px;">
@@ -3394,7 +2946,7 @@
                 </video>
                 <div class="options">
                     <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
+                         data-toggle="dropdown" data-offset="-140,-110">
                         <img src="img/xia.png">
                     </div>
                     <div class="dropdown-menu menu" style="height: 110px;">
@@ -3460,7 +3012,7 @@
                 </video>
                 <div class="options">
                     <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
+                         data-toggle="dropdown" data-offset="-140,-110">
                         <img src="img/xia.png">
                     </div>
                     <div class="dropdown-menu menu" style="height: 110px;">
@@ -3526,7 +3078,7 @@
                 </video>
                 <div class="options">
                     <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
+                         data-toggle="dropdown" data-offset="-140,-110">
                         <img src="img/xia.png">
                     </div>
                     <div class="dropdown-menu menu" style="height: 110px;">
@@ -3643,288 +3195,8 @@
 </div>
 
 
-
-<footer class="index-footer">
-    <div class="footer-info">
-        <div>
-            <div class="footer-null"></div>
-            <div class="footer-about">
-                <ul class="footer-list">
-                    <li>
-                        <a href="#">关于steam</a>
-                        <ul>
-                            <li><a href="#">什么是steam</a></li>
-                            <li><a href="#">在steam上送礼</a></li>
-                            <li><a href="#">steam社区</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">关于VALVE</a>
-                        <ul>
-                            <li><a href="#">关于Valve</a></li>
-                            <li><a href="#">商业解决方案</a></li>
-                            <li><a href="#">Steamworks</a></li>
-                            <li><a href="#">工作</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">帮助</a>
-                        <ul>
-                            <li><a href="#">客服</a></li>
-                            <li><a href="#">论坛</a></li>
-                            <li><a href="#">统计</a></li>
-                        </ul>
-                    </li>
-<!--                    <li>-->
-<!--                        <a href="#">动态信息</a>-->
-<!--                        <ul>-->
-<!--                            <li><a href="#"><img src="img/ico_rss2.gif"></img>Steam新闻</a></li>-->
-<!--                            <li><a href="#"><img src="img/ico_rss2.gif"></img> 游戏发布 </a></li>-->
-<!--                            <li><a href="#"><img src="img/ico_rss2.gif"></img> 每日特惠 </a></li>-->
-<!--                        </ul>-->
-<!--                    </li>-->
-                </ul>
-            </div>
-
-            <div class="footer-valve">
-                <div class="valve-rule"></div>
-                <div class="valve-valve">
-                    <img src="img/logo_valve_footer.png" alt="valve">
-                </div>
-                <div class="valve-c">
-                    ©2019 Valve Corporation。保留所有权利。所有商标均为其在美国及其它国家/地区的各自持有者所有。
-                </div>
-                <div class="valve-all">
-                    所有的价格均已包含增值税（如适用）。
-                    &nbsp;&nbsp;<a href="#">隐私政策</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">法律信息</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Steam 订户协议</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">退款</a>
-                </div>
-                <div class="valve-steam">
-                    <img src="img/logo_steam_footer.png" alt="steam_logo">
-                </div>
-            </div>
-            <div class="footer-aboutV">
-                <div class="valve-rule"></div>
-                <a href="#">关于 Valve</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Steamworks</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">工作</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">Steam 分销</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">礼物卡</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-            </div>
-        </div>
-    </div>
-</footer>
-<!--
-<div class="container">
-
-
-    <div class="row p-6">
-        <div class="col-md-3">
-            <div>
-                <img src="img/PAPER_TILE_G.png"
-                     style="width: 330px;
-                border-radius: 3px;
-                background-repeat: repeat;">
-            </div>
-            <div>
-                <img src="img/snow_ceiling.png" style="width: 380px;">
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="teas">
-                <img class="img" src="img/茶杯头.jpg" style="width: 254px"
-                     οnmοuseοver="document.getElementById('img').style.display = 'none'; "
-                     οnmοuseοut="document.getElementById('img').style.display = 'block' ;">
-                <video muted="muted" class="tea_head" onmouseover="this.play()" onmouseout="this.pause()">
-                    <source src="video/microtrailer.mp4" type="video/mp4">
-                    您的浏览器暂不支持播放该视频，请升级至最新版浏览器。
-                </video>
-                <div class="options">
-                    <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
-                        <img src="img/xia.png">
-                    </div>
-                    <div class="dropdown-menu menu" style="height: 110px;">
-                        <button class="dropdown-item">添加至您的愿望单</button>
-                        <button class="dropdown-item">忽略</button>
-                        <button class="dropdown-item">偏好</button>
-                    </div>
-                </div>
-                <div class="popout card">
-                    <div class="card-body">
-                        <h6 class="card-title">Cuphead</h6>
-                        <h6 class="card-subtitle mb-2 text-muted" style="font-size: 12px">发行于:2017年9月29日</h6>
-                        <p class="card-text">In Prey, you awaken aboard Talos I, a space station
-                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
-                            space station
-                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
-                            space station
-                        </p>
-                        <div class="evaluating">
-                            <p>总体用户评测：<br>
-                                <a href="#">多半好评</a>（42,753篇评测）</p>
-                        </div>
-                        <div class="system">
-                            <img src="img/win.png" style="width: 35px;">
-                            <img src="img/acc.png" style="width: 43px">
-                        </div>
-                        <div class="tally">
-                            <h6 style="font-size: 12px">用户标签：</h6>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                科幻</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                太空</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                氛围</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                单人</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                恐怖</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 80px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                第一人称射击</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                动作</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="discount">
-                    <div class="discount_pct">-31%</div>
-                    <div class="discount_price">¥ 68</div>
-                    <div class="discount_real">¥ 47</div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="teas">
-                <img class="img" src="img/茶杯头.jpg" style="width: 254px"
-                     οnmοuseοver="document.getElementById('img').style.display = 'none'; "
-                     οnmοuseοut="document.getElementById('img').style.display = 'block' ;">
-                <video muted="muted" class="tea_head" onmouseover="this.play()" onmouseout="this.pause()">
-                    <source src="video/microtrailer.mp4" type="video/mp4">
-                    您的浏览器暂不支持播放该视频，请升级至最新版浏览器。
-                </video>
-                <div class="options">
-                    <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
-                        <img src="img/xia.png">
-                    </div>
-                    <div class="dropdown-menu menu" style="height: 110px;">
-                        <button class="dropdown-item">添加至您的愿望单</button>
-                        <button class="dropdown-item">忽略</button>
-                        <button class="dropdown-item">偏好</button>
-                    </div>
-                </div>
-                <div class="popout card">
-                    <div class="card-body">
-                        <h6 class="card-title">Cuphead</h6>
-                        <h6 class="card-subtitle mb-2 text-muted" style="font-size: 12px">发行于:2017年9月29日</h6>
-                        <p class="card-text">In Prey, you awaken aboard Talos I, a space station
-                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
-                            space station
-                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
-                            space station
-                        </p>
-                        <div class="evaluating">
-                            <p>总体用户评测：<br>
-                                <a href="#">多半好评</a>（42,753篇评测）</p>
-                        </div>
-                        <div class="system">
-                            <img src="img/win.png" style="width: 35px;">
-                            <img src="img/acc.png" style="width: 43px">
-                        </div>
-                        <div class="tally">
-                            <h6 style="font-size: 12px">用户标签：</h6>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                科幻</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                太空</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                氛围</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                单人</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                恐怖</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 80px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                第一人称射击</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                动作</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="discount">
-                    <div class="discount_pct">-31%</div>
-                    <div class="discount_price">¥ 68</div>
-                    <div class="discount_real">¥ 47</div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="teas">
-                <img class="img" src="img/茶杯头.jpg" style="width: 254px"
-                     οnmοuseοver="document.getElementById('img').style.display = 'none'; "
-                     οnmοuseοut="document.getElementById('img').style.display = 'block' ;">
-                <video muted="muted" class="tea_head" onmouseover="this.play()" onmouseout="this.pause()">
-                    <source src="video/microtrailer.mp4" type="video/mp4">
-                    您的浏览器暂不支持播放该视频，请升级至最新版浏览器。
-                </video>
-                <div class="options">
-                    <div class="dropdown-toggle toggle"
-                         data-toggle="dropdown" data-offset="-141,-12">
-                        <img src="img/xia.png">
-                    </div>
-                    <div class="dropdown-menu menu" style="height: 110px;">
-                        <button class="dropdown-item">添加至您的愿望单</button>
-                        <button class="dropdown-item">忽略</button>
-                        <button class="dropdown-item">偏好</button>
-                    </div>
-                </div>
-                <div class="popout card">
-                    <div class="card-body">
-                        <h6 class="card-title">Cuphead</h6>
-                        <h6 class="card-subtitle mb-2 text-muted" style="font-size: 12px">发行于:2017年9月29日</h6>
-                        <p class="card-text">In Prey, you awaken aboard Talos I, a space station
-                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
-                            space station
-                            In Prey, you awaken aboard Talos I, a space stationIn Prey, you awaken aboard Talos I, a
-                            space station
-                        </p>
-                        <div class="evaluating">
-                            <p>总体用户评测：<br>
-                                <a href="#">多半好评</a>（42,753篇评测）</p>
-                        </div>
-                        <div class="system">
-                            <img src="img/win.png" style="width: 35px;">
-                            <img src="img/acc.png" style="width: 43px">
-                        </div>
-                        <div class="tally">
-                            <h6 style="font-size: 12px">用户标签：</h6>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                科幻</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                太空</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                氛围</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                单人</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                恐怖</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 80px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                第一人称射击</p>
-                            <p style="background-color: rgb(150, 163, 174); width: 35px; color: rgb(208, 215, 222);text-align: center; font-weight: bold; border-radius: 3px">
-                                动作</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="discount">
-                    <div class="discount_pct">-31%</div>
-                    <div class="discount_price">¥ 68</div>
-                    <div class="discount_real">¥ 47</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
--->
-
 <script src="lib/jquery/jquery-3.4.1.js"></script>
+<script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="lib/bootstrap/js/bootstrap.js"></script>
-<script src="lib/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
-<script src="js/dj-general.js"></script>
 </body>
 </html>

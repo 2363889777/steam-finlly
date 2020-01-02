@@ -1,0 +1,261 @@
+body{
+    background-color: rgb(28, 38, 58);
+    font-size: 12px;
+}
+
+img {
+    width: 100%;
+}
+
+.discount_pct {
+    background-color: #A1CD44;
+    width: 37px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+.discount {
+    margin-left: 144px;
+}
+
+.discount > div {
+    float: left;
+    margin-top: 5px;
+}
+
+.discount_price, .discount_real {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.discount_price {
+    text-decoration: line-through;
+    color: rgb(131, 141, 147);
+    width: 37px;
+    height: 22px;
+    font-size: 14px;
+    text-indent: 5px;
+}
+
+.discount_real {
+    font-size: 14px;
+    color: #ffffff;
+    width: 37px;
+    height: 22px;
+}
+
+.quantity_discount {
+    margin-left: 239px;
+}
+
+.quantity_discount > div {
+    float: left;
+    margin-top: 5px;
+}
+
+.row > div > img {
+    margin-top: 10px;
+}
+
+.tea_head {
+    position: absolute;
+    top: 10px;
+    left: 14px;
+    width: 258px;
+    z-index: 5;
+}
+
+.tea_head {
+    position: absolute;
+    top: 10px;
+    left: 14px;
+    width: 258px;
+    z-index: 5;
+}
+
+.img {
+    display: block;
+    margin-top: 10px;
+}
+
+.popout {
+    width: 350px;
+    height: 320px;
+    background-color: rgb(223, 231, 237);
+    position: absolute;
+    top: 10px;
+    left: 273px;
+    z-index: 15;
+    display: none;
+}
+
+.card-body,
+.card-body p,
+.card-body div,
+.card-body h6{
+    background-color: rgb(223, 231, 237);
+}
+
+.teas:hover > .popout {
+    display: block;
+}
+
+
+.evaluating {
+    background-color: rgb(107, 121, 133);
+    border-radius: 3px;
+    color: rgb(171, 185, 196);
+}
+
+.evaluating a {
+    color: rgb(102, 192, 244);
+}
+
+.tally {
+    margin-top: 10px;
+}
+
+.tally p {
+    float: left;
+    margin: 1px;
+}
+
+.system > img {
+    margin: 1px;
+    margin-top: -10px;
+}
+
+.options {
+    position: absolute;
+    top: 11px;
+    left: 255px;
+    z-index: 11;
+    display: none;
+}
+
+.options div img {
+    position: absolute;
+    top: 0px;
+    width: 17px;
+    height: 17px;
+}
+
+.options div {
+    width: 15px;
+    height: 15px;
+    background-color: #e5e5e5;
+    border: 0;
+}
+
+.teas:hover > .options {
+    display: block;
+}
+.menu {
+    position: absolute;
+    top: 1px;
+    left: -101px;
+}
+
+.toggle {
+    border-radius: 10px;
+}
+
+.tea_head1 {
+    position: absolute;
+    top: 0px;
+    left: 14px;
+    width: 351px;
+    z-index: 5;
+    margin-top: 10px;
+}
+
+.discount1 {
+    margin-left: 239px;
+}
+
+.discount1 > div {
+    float: left;
+    margin-top: 5px;
+}
+
+.popout1 {
+    width: 350px;
+    height: 320px;
+    background-color: rgb(223, 231, 237);
+    position: absolute;
+    top: 10px;
+    left: 365px;
+    z-index: 15;
+    display: none;
+}
+
+.teas:hover > .popout1 {
+    display: block;
+}
+
+.options1 {
+    position: absolute;
+    top: 11px;
+    left: 347px;
+    z-index: 11;
+    display: none;
+}
+
+.options1 div img {
+    position: absolute;
+    top: 0px;
+    width: 17px;
+    height: 17px;
+}
+
+.options1 div {
+    width: 15px;
+    height: 15px;
+    background-color: #e5e5e5;
+    border: 0;
+}
+
+.teas:hover > .options1 {
+    display: block;
+}
+
+.popout2 {
+    width: 350px;
+    height: 320px;
+    background-color: rgb(223, 231, 237);
+    position: absolute;
+    top: 10px;
+    left: -337px;
+    z-index: 15;
+    display: none;
+}
+
+.teas:hover > .popout2 {
+    display: block;
+}
+
+.popout3 {
+    width: 350px;
+    height: 320px;
+    background-color: rgb(223, 231, 237);
+    position: absolute;
+    top: 10px;
+    left: -337px;
+    z-index: 15;
+    display: none;
+}
+
+.teas:hover > .popout3 {
+    display: block;
+}
+
+.home_title_ctn > div {
+    float: left;
+}
+
+.break > div {
+    float: left;
+}
+
