@@ -7,8 +7,206 @@
     <link rel="stylesheet" href="css/hot.css">
     <link rel="stylesheet" href="css/ls-demo01.css">
     <link rel="stylesheet" href="css/ls-demo02.css">
+    <link rel="stylesheet" href="lib/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/dj-general-black.css">
+    <link rel="stylesheet" href="css/dj-general-secondMenu-black.css">
 </head>
 <body>
+
+<!--头-->
+<div class="dj-general-menu container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light  dj-main-general container">
+        <a class="navbar-brand" href="#" >
+            <img src="dj-img/globalheader_logo.png" style="width: 176px; height: 44px"/>
+        </a>
+        <div class="collapse navbar-collapse dj-general-menubr" >
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item" id="dj-general-shoptitle">
+                    <a class="nav-link" href="#" >商店<span class="sr-only">(current)</span></a>
+                    <ul class="nav shadow" id="dj-general-shop">
+                        <li  class="nav-item">
+                            <a class="nav-link" href="#">精选<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">探索<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">鉴赏家<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">愿望单<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">新闻<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">统计<span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item" id="dj-general-communitytitle">
+                    <a class="nav-link" href="#">社区</a>
+                    <ul class="nav shadow" id="dj-general-community">
+                        <li  class="nav-item">
+                            <a class="nav-link" href="#">精选<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">探索<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">鉴赏家<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">愿望单<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">新闻<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">统计<span class="sr-only">(current)</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">关于</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">客服</a>
+                </li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse " id="dj-general-seMenubar">
+            <ul class="navbar-nav mr-auto" >
+                <li class="nav-item"><a href="" class="nav-link" id="dj-general-download"><i class="fa fa-download" style="margin-right: 10px"></i>安装 steam</a></li>
+                <li class="nav-item"><a href="" class="nav-link">登录</a></li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" id="dj-general-language" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        语言
+                    </a>
+                    <div class="dropdown-menu shadow"  aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">繁體中文(繁体中文)</a>
+                        <a class="dropdown-item" href="#">日本語(日语)</a>
+                        <a class="dropdown-item" href="#">就亏叶(韩语)</a>
+                        <a class="dropdown-item" href="#">lns(泰语)</a>
+                        <a class="dropdown-item" href="#">6bnrapCkm (保加利亚语)</a>
+                        <a class="dropdown-item" href="#">Cestina (捷克语)</a>
+                        <a class="dropdown-item" href="#">Dansk (丹麦语)</a>
+                        <a class="dropdown-item" href="#">Deutsch (德语)</a>
+                        <a class="dropdown-item" href="#">English (英语)</a>
+                        <a class="dropdown-item" href="#">Espanol- Espana (西班牙语-西班牙)</a>
+                        <a class="dropdown-item" href="#">Espanol - Latinoamerica (西班牙语拉J美洲)</a>
+                        <a class="dropdown-item" href="#">EXηVIka (希腊语)</a>
+                        <a class="dropdown-item" href="#">Francais (法语)</a>
+                        <a class="dropdown-item" href="#">Italiano (意大利语)</a>
+                        <a class="dropdown-item" href="#">Magyar (匈牙利语)</a>
+                        <a class="dropdown-item" href="#">Nederlands (荷兰语)</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<!--头部导航-->
+<div class="dj-general-second-menu container-fluid">
+    <nav class=" dj-general-second-main-menu container navbar navbar-expand-lg navbar-light">
+        <div class="navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav rounded shadow-sm">
+                <li class="nav-item active" id="dj-gsmm-shop">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        您的商店
+                    </a>
+                    <div class="dropdown-menu shadow hidden">
+                        <a class="dropdown-item" href="#">商店主页</a>
+                        <a class="dropdown-item" href="#">最近查看过的</a>
+                        <a class="dropdown-item" href="#">Steam鉴赏家</a>
+                        <a class="dropdown-item" href="#">最近更新</a>
+                    </div>
+                </li>
+                <li class="nav-item" id="dj-gsmm-game">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        游戏
+                    </a>
+                    <div class="dropdown-menu shadow hidden">
+                        <a class="dropdown-item" href="#">免费游玩</a>
+                        <a class="dropdown-item" href="#">抢先体验</a>
+                        <a class="dropdown-item" href="#">试玩</a>
+                        <a class="dropdown-item" href="#">虚拟现实</a>
+                        <a class="dropdown-item" href="#">支持Steam控制器</a>
+                        <a class="dropdown-item" href="#">Steam上的网吧游戏</a>
+                        <a class="dropdown-item" href="#">远程畅玩</a>
+                        <div class="dropdown-divider"></div>
+                        <h6 class="dropdown-header">按类型浏览:</h6>
+                        <a class="dropdown-item" href="#">休闲</a>
+                        <a class="dropdown-item" href="#">体育</a>
+                        <a class="dropdown-item" href="#">冒险</a>
+                        <a class="dropdown-item" href="#">动作</a>
+                        <a class="dropdown-item" href="#">大型多人在线</a>
+                        <a class="dropdown-item" href="#">模拟</a>
+                        <a class="dropdown-item" href="#">独立</a>
+                        <a class="dropdown-item" href="#">竞速</a>
+                        <a class="dropdown-item" href="#">策略</a>
+                        <a class="dropdown-item" href="#">角色扮演</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">查看热门标签</a>
+                        <div class="dropdown-divider"></div>
+                        <h6 class="dropdown-header">按平台浏览:</h6>
+                        <a class="dropdown-item" href="#">Mac OS X</a>
+                        <a class="dropdown-item" href="#">SteamOS + Linux</a>
+                    </div>
+                </li>
+                <li class="nav-item collapse navbar-collapse" id="dj-gsmm-software">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" role="button" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        软件
+                    </a>
+                    <div class="dropdown-menu shadow hidden">
+                        <a class="dropdown-item" href="#">软件中心</a>
+                        <div href="" class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">动画制作和建模</a>
+                        <a class="dropdown-item" href="#">实用工具</a>
+                        <a class="dropdown-item" href="#">教育</a>
+                        <a class="dropdown-item" href="#">游戏开发</a>
+                        <a class="dropdown-item" href="#">照片编辑</a>
+                        <a class="dropdown-item" href="#">网络出版</a>
+                        <a class="dropdown-item" href="#">视频制作</a>
+                        <a class="dropdown-item" href="#">设计与插画</a>
+                        <a class="dropdown-item" href="#">音频制作</a>
+                    </div>
+                </li>
+                <li class="nav-item collapse navbar-collapse" id="dj-gsmm-hardware">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        硬件
+                    </a>
+                    <div class="dropdown-menu shadow hidden">
+                        <a class="dropdown-item" href="#">Valve Index@</a>
+                        <a class="dropdown-item" href="#">Steam控制器</a>
+                        <a class="dropdown-item" href="#">Steam流式盒</a>
+                        <a class="dropdown-item" href="#">HTC Vive</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">新闻</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Steam 实验室</a>
+                </li>
+                <li class="nav-item dj-gsmm-split"></li>
+                <li id="dj-gsmm-search" style="margin-top: 3px">
+                    <form action="" class="form-check-inline">
+                        <input type="text" class="form-control" placeholder="搜索商店">
+                        <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                    </form>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</div>
 
 <div class="container">
     <div class="row">
@@ -473,11 +671,11 @@
     <div class="row">
         <div class="col-md-3">
             <div class="teas">
-                <img class="img" src="img/cap_616x353.jpg" style="width: 80px"
+                <img class="img" src="img/cap_616x353.jpg" style="width: 254px"
                      οnmοuseοver="document.getElementById('img').style.display = 'none'; "
                      οnmοuseοut="document.getElementById('img').style.display = 'block' ;">
                 <video muted="muted" class="tea_head" onmouseover="this.play()" onmouseout="this.pause()">
-                    <source src="video/microtrailer7.mp4" type="video/mp4">
+                    <source src="video/microtrailer.mp4" type="video/mp4">
                     您的浏览器暂不支持播放该视频，请升级至最新版浏览器。
                 </video>
                 <div class="options">
@@ -734,14 +932,12 @@
     </div>
 </div>
 
-
 <!--  2019年度最佳  -->
 <div class="ls-best container" >
     <div class="best container">
         <a href=""><img src="img/banner_top2019_schinese.jpg" width="1200"></a>
     </div>
 </div>
-
 
 <div class="container">
     <div class="row">
@@ -1206,11 +1402,11 @@
     <div class="row">
         <div class="col-md-3">
             <div class="teas">
-                <img class="img" src="img/cap_616x353.jpg" style="width: 80px"
+                <img class="img" src="img/cap_616x353.jpg" style="width: 254px"
                      οnmοuseοver="document.getElementById('img').style.display = 'none'; "
                      οnmοuseοut="document.getElementById('img').style.display = 'block' ;">
                 <video muted="muted" class="tea_head" onmouseover="this.play()" onmouseout="this.pause()">
-                    <source src="video/microtrailer7.mp4" type="video/mp4">
+                    <source src="video/microtrailer.mp4" type="video/mp4">
                     您的浏览器暂不支持播放该视频，请升级至最新版浏览器。
                 </video>
                 <div class="options">
@@ -1751,7 +1947,7 @@
     <div class="row">
         <div class="col-md-3">
             <div class="teas">
-                <img class="img" src="img/cap_616x353.jpg" style="width: 80px"
+                <img class="img" src="img/cap_616x353.jpg" style="width: 254px"
                      οnmοuseοver="document.getElementById('img').style.display = 'none'; "
                      οnmοuseοut="document.getElementById('img').style.display = 'block' ;">
                 <video muted="muted" class="tea_head" onmouseover="this.play()" onmouseout="this.pause()">
@@ -2277,7 +2473,7 @@
     <div class="row">
         <div class="col-md-3">
             <div class="teas">
-                <img class="img" src="img/cap_616x353.jpg" style="width: 80px"
+                <img class="img" src="img/cap_616x353.jpg" style="width: 254px"
                      οnmοuseοver="document.getElementById('img').style.display = 'none'; "
                      οnmοuseοut="document.getElementById('img').style.display = 'block' ;">
                 <video muted="muted" class="tea_head" onmouseover="this.play()" onmouseout="this.pause()">
@@ -2611,7 +2807,7 @@
     <div class="row">
         <div class="col-md-3">
             <div class="teas">
-                <img class="img" src="img/cap_616x353.jpg" style="width: 80px"
+                <img class="img" src="img/cap_616x353.jpg" style="width: 254px"
                      οnmοuseοver="document.getElementById('img').style.display = 'none'; "
                      οnmοuseοut="document.getElementById('img').style.display = 'block' ;">
                 <video muted="muted" class="tea_head" onmouseover="this.play()" onmouseout="this.pause()">
@@ -2871,45 +3067,6 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-md-12 home_title_ctn" style="font-size: 14px">
-            <p>
-            <div class="home_title" style="
-            color: #c6d4df;
-            font-size: 12px;
-            line-height: 25px;
-            "
-            >
-                查看更多：
-            </div>
-
-            <div style="border-radius: 2px;
-                width: 80px;
-                height: 26px;
-                border: 1px solid white;
-                text-align: center;
-                line-height: 25px;
-                color: #fff !important;
-                background: transparent;
-                font-size: 12px;">热销商品
-            </div>
-
-            <div style="font-size: 14px; color: white">或</div>
-
-            <div style="border-radius: 2px;
-                width: 80px;
-                height: 26px;
-                border: 1px solid white;
-                text-align: center;
-                line-height: 25px;
-                color: #fff !important;
-                background: transparent;
-                font-size: 12px;">全球热销商品
-            </div>
-            </p>
-        </div>
-    </div>
-
     <div class="break row">
         <div class="col-md-6 home_title_ctn" style="font-size: 14px">
             <p>
@@ -2971,7 +3128,7 @@
     </div>
 </div>
 
-
+<!--浏览更多轮播图-->
 <div id="carouselExampleIndicators" class="ls-browse carousel slide" data-ride="carousel">
 
     <div class="ls-title">
@@ -3063,5 +3220,6 @@
 <script src="lib/jquery/jquery-3.4.1.js"></script>
 <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="js/dj-general.js"></script>
 </body>
 </html>

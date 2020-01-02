@@ -54,6 +54,7 @@
     background: rgb(23, 26, 33);
     left: 0px;
     top: 30px;
+    z-index: 20;
 }
 #dj-general-shoptitle:hover #dj-general-shop{
     display: block;
@@ -68,6 +69,7 @@
     background: rgb(23, 26, 33);
     left: 0px;
     top: 30px;
+    z-index: 20;
 }
 /*对账号进行设置*/
 #dj-general-account {
