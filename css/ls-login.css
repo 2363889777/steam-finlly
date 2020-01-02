@@ -3,6 +3,7 @@
     width: 100%;
     height: 512px;
     color: #c6d4df;
+    padding-top: 20px;
 }
 
 .container {
@@ -28,9 +29,13 @@
     color: white;
 }
 
-.ls-login form input {
-    background-color: #121A24;
+.ls-login .form-group input {
+    width: 275.5px;
+    height: 33px;
+    padding-left: 5px;
+    background-color: rgba( 0, 0, 0, 0.2 );
     color: white;
+    border-color: #000 #45556c #45556c #000;
 }
 
 /* 设置列表的左内边距 */
@@ -58,7 +63,7 @@
 /* 加入Steam */
 .ls-login a span{
     display: block;
-    margin-top: 168px;
+    margin-top: 158px;
     width: 110px;
     height: 30px;
     background: rgba( 103, 193, 245, 0.2 );
