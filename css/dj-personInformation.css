@@ -2,6 +2,7 @@
  *******************************************/
 body{
     background: url("../dj-img/dj-profile_bg.jpg");
+    background-repeat: round;
 }
 /****对个人信息页面身体进行设置
  *******************************************/
@@ -189,14 +190,19 @@ body{
     /*位置设置/测试边框*/
     /*显示和宽高设置*/
     width: 950px;
-    height: 700px;
+    /*height: 700px;*/
     /*样式设置*/
     /*盒子模型的属性*/
+    padding-bottom: 64px;
     background-image: url("../dj-img/dj-profile_content_bg.png");
+
     /*文本字体*/
     /*动画特效*/
 }
 /*对右侧的导航进行设置*/
+#dj-pi-body-body .dj-pi-right{
+    margin-left: -20px;
+}
 #dj-pi-body-body .dj-pi-right a.nav-link{
     /*位置设置/测试边框*/
     /*显示和宽高设置*/
@@ -352,4 +358,203 @@ body{
     color:rgb(143, 152, 160);
     font-size:13px;
     /*动画特效*/
+}
+/*对尾部进行设置*/
+#dj-pi-body-body  .dj-pi-bb-footer{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    width: 636px;
+    /*样式设置*/
+    /*盒子模型的属性*/
+
+    /*文本字体*/
+    /*动画特效*/
+}
+#dj-pi-body-body  .dj-pi-bb-footer a{
+    font-size:13px;
+    color:rgb(235, 235, 235);
+}
+#dj-pi-body-body  .dj-pi-bb-footer a:hover{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    /*文本字体*/
+    color: rgb(102, 187, 237);
+    text-decoration: none;
+    /*动画特效*/
+}
+
+#dj-pi-body-body  .dj-pi-bb-footer label{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    /*文本字体*/
+    color:rgb(143, 152, 160);
+    font-size: 13px;
+    /*动画特效*/
+}
+/*对二级身体尾部进行设置*/
+#dj-pi-body-body .dj-pi-bb-footer-end{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    width: 636px;
+    height: 38px;
+    /*样式设置*/
+    /*盒子模型的属性*/
+    margin-top: 84px;
+    background-color:rgb(20, 20, 20);
+    padding: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    /*border: 1px solid rgb(143, 152, 160);*/
+    border-radius: 3px;
+    margin-bottom: 10px;
+    /*文本字体*/
+    /*动画特效*/
+}
+#dj-pi-body-body .dj-pi-bb-footer-end>label{
+    color:rgb(143, 152, 160);
+    font-size:20px;
+    font-weight:200;
+    font-family:"Motiva Sans", sans-serif;
+}
+#dj-pi-body-body .dj-pi-bb-footer-end input{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    width: 13px;
+    height: 13px;
+    /*样式设置*/
+    /*盒子模型的属性*/
+    background-color:rgba(0, 0, 0, 0.2);
+    /*文本字体*/
+    /*动画特效*/
+    /*动画特效*/
+}
+#dj-pi-body-body .dj-pi-bb-footer-end .form-check input[type="checkbox"] {
+    opacity: 0;/*将初始的checkbox隐藏起来*/
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+    margin: 20px 0 0 0;
+    top: 50%;
+    left: 3px;
+}
+/*设计新的checkbox，位置*/
+#dj-pi-body-body .dj-pi-bb-footer-end  .form-check label:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    margin-top: -9px;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    border-radius: 2px;
+    border: 1px solid rgb(56, 83, 119);
+    border-left-color:rgb(7, 10, 15);
+    border-top-color:rgb(7, 10, 15);
+    background-color:rgba(0, 0, 0, 0.2);
+}
+/*点击初始的checkbox，将新的checkbox关联起来*/
+
+#dj-pi-body-body .dj-pi-bb-footer-end .form-check input[type="checkbox"]:checked +label:after {
+    position: absolute;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    color: rgb(79, 156, 185);
+    content:url(../dj-img/dj-pi-bb-f-gou.png);
+    top: 40%;
+    left: 16px;
+    margin-top: -5px;
+    font-size: 11px;
+    line-height: 1;
+    width: 13px;
+    height: 13px;
+    color: #333;
+}
+
+#dj-pi-body-body .dj-pi-bb-footer-end  .form-check label{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    /*样式设置*/
+    /*盒子模型的属性*/
+    margin-top: 3px;
+    margin-left: 15px;
+    /*文本字体*/
+    font-size:12px;
+    line-height:26px;
+    color:rgb(143, 152, 160);
+    /*动画特效*/
+}
+/*对下滑线进行设置*/
+#dj-pi-body-body .dj-pi-bb-foot-hr{
+    width: 636px;
+    border: 1px solid black;
+    border-bottom-color:rgb(48, 48, 48);
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+    margin-top: 30px;
+}
+/*对留言栏进行设置*/
+#dj-pi-body-body .dj-pi-leave-message{
+    padding: 8px;
+}
+#dj-pi-body-body .dj-pi-leave-message i{
+    /*位置设置/测试边框*/
+    position: relative;
+    display: block;
+    /*显示和宽高设置*/
+    width: 32px;
+    height: 32px;
+    /*样式设置*/
+    /*盒子模型的属性*/
+    background-image: url("../dj-img/dj-pi-header-img.jpg");
+    background-size: 100%;
+    /*文本字体*/
+    /*动画特效*/
+}
+
+#dj-pi-body-body .dj-pi-leave-message a{
+    /*位置设置/测试边框*/
+    display: inline-block;
+    /*显示和宽高设置*/
+    width: 34px;
+    height: 34px;
+    /*样式设置*/
+    /*盒子模型的属性*/
+    /*border: 1px solid ;*/
+    padding: 1px;
+    background-image:linear-gradient(rgb(106, 106, 106) 5%, rgb(85, 85, 85) 95%);
+    /*文本字体*/
+    /*动画特效*/
+}
+#dj-pi-body-body .dj-pi-leave-message .form-control{
+    border: 0;
+}
+#dj-pi-body-body .dj-pi-leave-message input{
+    /*位置设置/测试边框*/
+    /*显示和宽高设置*/
+    height: 36px;
+    /*样式设置*/
+    /*盒子模型的属性*/
+    background-color: #3a3a3a;
+
+    border-radius: 3px;
+    /*文本字体*/
+    /*动画特效*/
+}
+.form-control::-moz-placeholder {
+    color: #999;
+    opacity: 1;
+    font-style: italic;
+}
+.form-control:-ms-input-placeholder {
+    color: #999;
+    font-style: italic;
+}
+.form-control::-webkit-input-placeholder {
+    color: rgb(81, 81, 82);
+    font-style: italic;
 }
