@@ -1,17 +1,17 @@
 /* 设置标题 */
 .ls-title {
+    font-size: 17px;
     color: white;
     vertical-align: middle;
     height: 22px;
     line-height: 22px;
-    padding-left: 16px;
+    padding-left: 32px;
     margin-bottom: 10px;
  }
 
 .ls-title div{
     display: inline-block;
-    width: 1100px;
-
+    width: 1120px;
     border-bottom: 1px solid white;
     margin-bottom: 5px;
 }
@@ -22,8 +22,8 @@
     height: 358px;
     background-color: #1C263A;
     padding-top: 10px;
-    padding-left: 30px;
-    left: 17%;
+    /*padding-left: 30px;*/
+    left: 6.5%;
 }
 
 .ls-browse .carousel-item a{
@@ -31,7 +31,7 @@
     width: 270px;
     height: 263px;
     overflow: hidden;
-    margin-left: 20px;
+    margin-left: 32px;
 }
 
 .ls-browse img{
@@ -48,5 +48,7 @@
 
 /* 设置左右两个箭头的位置 */
 .carousel-control-prev, .carousel-control-next {
-    width: 5%;
+    width: 2%;
 }
+
+
